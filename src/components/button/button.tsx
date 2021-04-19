@@ -15,12 +15,9 @@ export interface LinkButtonProps extends ButtonProps {
     to: string;
 }
 
-const LinkButton = ({className, children, ...props}: LinkButtonProps): JSX.Element => (
-    <Link
-        className={styles.link}
-        {...props}
-    >
-        <Button className={className}>
+const LinkButton = ({children, to, ...props}: LinkButtonProps): JSX.Element => (
+    <Link to={to} className={styles.link}>
+        <Button {...props}>
             {children}
         </Button>
     </Link>
