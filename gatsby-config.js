@@ -4,6 +4,7 @@ module.exports = {
         description: "Simple game of bingo for Guild Wars 2 Fractal runs",
         author: "Zerthox"
     },
+    pathPrefix: "/gw2-bingo",
     plugins: [
         "gatsby-plugin-react-helmet",
         "gatsby-plugin-offline",
