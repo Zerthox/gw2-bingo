@@ -1,0 +1,26 @@
+@use "layout";
+@use "colors";
+
+.tile {
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: colors.$gray-light;
+    text-align: center;
+    @include layout.card;
+    @include layout.transition;
+    &.clickable {
+        cursor: pointer;
+    }
+    &.highlight {
+        background: #1e9c0e;
+    }
+}
+
+.title {
+    font-weight: 600;
+}
+.content {
+    font-size: 0.9em;
+}

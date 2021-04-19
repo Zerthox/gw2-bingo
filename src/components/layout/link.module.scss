@@ -1,0 +1,15 @@
+@use "layout";
+@use "colors";
+
+.link {
+    padding: 1px 3px;
+    background: hsla(0, 0%, 100%, .1);
+    border-bottom: 1px solid colors.$link;
+    color: colors.$link;
+    text-decoration: none;
+    @include layout.transition;
+    &:hover {
+        background: hsla(0, 0%, 100%, .3);
+        color: #fff;
+    }
+}

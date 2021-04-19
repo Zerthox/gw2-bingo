@@ -1,0 +1,21 @@
+@use "layout";
+@use "colors";
+
+.button {
+    padding: 10px 20px;
+    background: colors.$gray-dark;
+    text-align: center;
+    @include layout.card;
+    @include layout.transition;
+    &:hover {
+        background: colors.$gray-light;
+    }
+    &:active {
+        transform: scale(.95);
+    }
+}
+.link {
+    color: colors.$text;
+    text-decoration: none;
+    cursor: pointer;
+}
