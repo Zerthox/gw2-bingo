@@ -1,5 +1,5 @@
 /** Helper for conversion. */
-const converter = "ABCDEFGHIJKLMOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_";
+const converter = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_";
 
 /** Encodes IDs as a string. */
 const encode = (ids: Array<number>): string => {
