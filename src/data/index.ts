@@ -1,6 +1,11 @@
 import dataCM from "./cm.json";
 
-type RawData = {[fractal: string]: string[]};
+interface Fractal {
+    global?: string[];
+    encounters?: {[encounter: string]: string[]};
+}
+
+type Data = {[fractal: string]: Fractal};
 
 export interface Field {
     fractal: string;
@@ -8,17 +13,13 @@ export interface Field {
 }
 
 /** Flattens nested data into an array of fields. */
-const flatten = (data: RawData): Field[] => Object.entries(data).map(([fractal, fields]) => fields.map((event) => ({fractal, event}))).flat();
+const flatten = (data: Data): Field[] => Object.entries(data).map(([fractal, {global = [], encounters = {}}]) => {
+    const flatGlobals = global.map((event) => ({fractal: fractal, event}));
+    const flatEncounters = Object.entries(encounters).map(([encounter, fields]) => fields.map((event) => ({fractal: `${fractal} ${encounter}`, event}))).flat();
+    return flatGlobals.concat(flatEncounters);
+}).flat();
 
-const processedCM: RawData = {};
-for (const [fractal, encounters] of Object.entries(dataCM)) {
-    for (const [boss, fields] of Object.entries(encounters)) {
-        processedCM[`${fractal} ${boss}`] = fields;
-    }
-}
-
-const fieldsCM = flatten(processedCM);
-console.log(processedCM, fieldsCM);
+const fieldsCM = flatten(dataCM);
 
 /** Collection of all available fields. */
 const getAll = (): Field[] => fieldsCM;

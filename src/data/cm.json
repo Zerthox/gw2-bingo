@@ -1,66 +1,80 @@
 {
-    "98CM": {
-        "MAMA": [
-            "Sad life - You got knocked",
-            "2 poison fields",
-            "We are speed! Phased before first bubble"
-        ],
-        "Bullet Hell": [
-            "Someone skipped with Choya Tonic",
-            "Marathon - No Choya skip",
-            "This is hard... - Full wipe at pre"
-        ],
-        "Siax": [
-            "Do we need a kite? - Mid spit",
-            "No Aegis!? Got hit & spawned Hallucination"
-        ],
-        "Ensolyss": [
-            "Pro CC - Successful instabreak",
-            "RIP Burst - Attempted & failed instabreak",
-            "Pleb group - No instabreak attempts",
-            "No teleport to mid after dash"
+    "98-100CM": {
+        "global": [
+            "Wake up! - You revived a downed player",
+            "You saw nothing! - Went down but got back up"
         ]
+    },
+    "98CM": {
+        "encounters": {
+            "MAMA": [
+                "Sad life - You got knocked",
+                "2 poison fields",
+                "We are speed! Phased before first bubble",
+                "What is Staff? - Renegade not highest CC"
+            ],
+            "Bullet Hell": [
+                "Someone skipped with Choya Tonic",
+                "Marathon - No Choya skip",
+                "This is hard... - Full wipe at pre"
+            ],
+            "Siax": [
+                "Do we need a kite? - Mid spit",
+                "No Aegis!? Got hit & spawned Hallucination"
+            ],
+            "Ensolyss": [
+                "Pro CC - Successful instabreak",
+                "RIP Burst - Attempted & failed instabreak",
+                "Pleb group - No instabreak attempts",
+                "No teleport to mid after dash"
+            ]
+        }
     },
     "99CM": {
-        "Shattered Observatory": [
-            "LNHB success (intentional /gg not counted)"
-        ],
-        "Skorvald": [
-            "Steadfast - Smooth Stability support",
-            "Taxi - 66% & 33% portals were used",
-            "We do cardio! - No portals used",
-            "Bye cruel world! - You got knocked off"
-        ],
-        "Artsariiv": [
-            "Fire with fire: DPS reflects successfully",
-            "I got you! - You backup marble",
-            "Strike - Marble fail",
-            "I trusted! No Aegis/Stability in middle",
-            "Pro Firebrand - No Aegis/Stability fails",
-            "Consumable Consumer - Highest CC",
-            "RIP DPS - Got 2 or 3 skulls"
-        ],
-        "Arkk": [
-            "Why are you running? - You got feared",
-            "Skydiver - Fell from the platform",
-            "No SAK - Hit by orb",
-            "Was it me? - Skull fail"
-        ]
+        "encounters": {
+            "Shattered Observatory": [
+                "LNHB success (intentional /gg not counted)"
+            ],
+            "Skorvald": [
+                "Steadfast - Smooth Stability support",
+                "Taxi - 66% & 33% portals were used",
+                "We do cardio! - No portals used",
+                "Bye cruel world! - You got knocked off"
+            ],
+            "Artsariiv": [
+                "Fire with fire: DPS reflects successfully",
+                "I got you! - You backup marble",
+                "Strike - Marble fail",
+                "I trusted! No Aegis/Stability in middle",
+                "Pro Firebrand - No Aegis/Stability fails",
+                "Consumable Consumer - Highest CC",
+                "RIP DPS - Got 2 or 3 skulls"
+            ],
+            "Arkk": [
+                "Why are you running? - You got feared",
+                "Skydiver - Fell from the platform",
+                "No SAK - Hit by orb",
+                "Was it me? - Skull fail",
+                "SAK Abuse - Renegade dominates in CC"
+            ]
+        }
     },
     "100CM": {
-        "Sunqua Peak": [
-            "DwD success (intentional /gg not counted)"
-        ],
-        "Ai": [
-            "Death by Beyblade: Hit by spin"
-        ],
-        "Elemental Ai": [
-            "Forgotten mechanics: Reached cloud mechanic",
-            "Runs out from/with green",
-            "Staying dry - Killed before water tornado"
-        ],
-        "Dark Ai": [
-            "No Sanctuary - Failed Sorrow CC"
-        ]
+        "encounters": {
+            "Sunqua Peak": [
+                "DwD success (intentional /gg not counted)"
+            ],
+            "Ai": [
+                "Death by Beyblade: Hit by spin"
+            ],
+            "Elemental Ai": [
+                "Forgotten mechanics: Reached cloud mechanic",
+                "Runs out from/with green",
+                "Staying dry - Killed before water tornado"
+            ],
+            "Dark Ai": [
+                "No Sanctuary - Failed Sorrow CC"
+            ]
+        }
     }
 }
