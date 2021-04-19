@@ -25,8 +25,8 @@ module.exports = {
         "comma-dangle": ["error", "never"],
         "indent": ["error", 4],
         "max-len": "off",
-        "require-jsdoc": "off",
         "quotes": ["error", "double"],
+        "require-jsdoc": "off",
         "valid-jsdoc": "off",
         "import/extensions": ["error", {
             js: "never",

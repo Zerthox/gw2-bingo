@@ -19,7 +19,7 @@ const App = (): JSX.Element => {
                 Generate Bingo
             </LinkButton>
             <Paragraph>This page allows you to generate a bingo card for your Fractal CM runs.</Paragraph>
-            <Paragraph>Currently, we feature a total of {data.getAll().length} different bingo fields!</Paragraph>
+            <Paragraph>Currently we feature a total of {data.getAll().length} different bingo fields!</Paragraph>
             <Paragraph>First time here? See <Link to="/how-to">How to play</Link>.</Paragraph>
         </Layout>
     );
