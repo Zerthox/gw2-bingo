@@ -1,6 +1,6 @@
 import React from "react";
 import classNames from "classnames";
-import * as Styles from "./tile.module.scss";
+import * as styles from "./tile.module.scss";
 
 export interface TileProps {
     title: string;
@@ -12,14 +12,14 @@ export interface TileProps {
 
 const Tile = ({title, content, highlight, className, onClick}: TileProps): JSX.Element => (
     <div
-        className={classNames(Styles.tile, className, {
-            [Styles.clickable]: onClick instanceof Function,
-            [Styles.highlight]: highlight
+        className={classNames(styles.tile, className, {
+            [styles.clickable]: onClick instanceof Function,
+            [styles.highlight]: highlight
         })}
         onClick={onClick}
     >
-        <div className={Styles.title}>{title}</div>
-        <div className={Styles.content}>{content}</div>
+        <div className={styles.title}>{title}</div>
+        <div className={styles.content}>{content}</div>
     </div>
 );
 

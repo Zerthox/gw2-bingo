@@ -1,7 +1,7 @@
 import React from "react";
 import {useStaticQuery, graphql} from "gatsby";
 import SEO from "./seo";
-import * as Styles from "./layout.module.scss";
+import * as styles from "./layout.module.scss";
 
 export interface LayoutProps {
     children: React.ReactNode;
@@ -38,10 +38,10 @@ const Layout = ({title = "", children}: LayoutProps): JSX.Element => {
                 description={site.siteMetadata.description}
                 author={site.siteMetadata.author}
             />
-            <div className={Styles.main}>
-                <div className={Styles.inner}>
-                    <div className={Styles.header}>{title || site.siteMetadata.title}</div>
-                    <div className={Styles.content}>
+            <div className={styles.main}>
+                <div className={styles.inner}>
+                    <div className={styles.header}>{title || site.siteMetadata.title}</div>
+                    <div className={styles.content}>
                         {children}
                     </div>
                 </div>

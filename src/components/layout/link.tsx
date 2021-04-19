@@ -1,7 +1,7 @@
 import React from "react";
 import classNames from "classnames";
 import {Link as GatsbyLink} from "gatsby";
-import * as Styles from "./link.module.scss";
+import * as styles from "./link.module.scss";
 
 export interface LinkProps {
     to: string;
@@ -11,10 +11,10 @@ export interface LinkProps {
 
 const Link = ({to, className, children}: LinkProps): JSX.Element => (
     to.match(/^\//) ? (
-        <GatsbyLink to={to} className={classNames(Styles.link, className)}>{children}</GatsbyLink>
+        <GatsbyLink to={to} className={classNames(styles.link, className)}>{children}</GatsbyLink>
     ) : (
         <a
-            className={classNames(Styles.link, className)}
+            className={classNames(styles.link, className)}
             href={to}
             target="_blank"
             rel="noopener noreferrer"
