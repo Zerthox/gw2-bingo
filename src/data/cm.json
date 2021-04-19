@@ -1,28 +1,57 @@
 {
     "98-100CM": {
         "global": [
-            "Wake up! - You revived a downed player",
-            "You saw nothing! - Went down but got back up"
+            "Press F - You revived a downed player",
+            "You saw nothing! - Downed & got back up",
+            "Invincible - No downs",
+            "No amateurs - Everything first try",
+            "Cleared but had several fails",
+            "Who are these people? - Had to PUG",
+            "Kaffeklatsch - Run with Guild/friends",
+            "You carried group CC",
+            "Someone solos last % of a boss",
+            "Got carried - Died & group cleared",
+            "You carried group DPS or played Support",
+            "DPS loses to BS/Support",
+            "Meta is a lie! - Non-meta group composition",
+            "God abandoned us - No Fractal Gods",
+            "Blessed - 2 or more Fractal Gods",
+            "No Pain No Fun - Bad instabilities",
+            "Lucky! - Dropped 7 or more Mystic Coins",
+            "No Luck - 0 Mystic Coin drops",
+            "Ranger Spirit died (unintentionally)",
+            "Technical difficulties: Someone had disconnect/crash"
         ]
     },
     "98CM": {
         "encounters": {
+            "Nightmare": [
+                "Cheap - No Slaying Potions",
+                "Always optimizing - Used Slaying Potions",
+                "Min-maxing - Swapped to Slaying Sigils"
+            ],
             "MAMA": [
+                "Watchwork Wreckers - Smooth kill",
                 "Sad life - You got knocked",
-                "2 poison fields",
+                "Spawned 2 poison fields",
                 "We are speed! Phased before first bubble",
                 "What is Staff? - Renegade not highest CC"
             ],
             "Bullet Hell": [
+                "This is hard... - Full wipe at pre",
+                "Infinite Condis - No Cleanse/Resistance",
+                "Leecher - Someone went AFK during pre",
+                "PvP Roleplay - You capped a circle",
                 "Someone skipped with Choya Tonic",
-                "Marathon - No Choya skip",
-                "This is hard... - Full wipe at pre"
+                "Marathon - No Choya skip"
             ],
             "Siax": [
+                "Serpent Slayers - Smooth kill",
                 "Do we need a kite? - Mid spit",
                 "No Aegis!? Got hit & spawned Hallucination"
             ],
             "Ensolyss": [
+                "Serpent Slayers - Smooth kill",
                 "Pro CC - Successful instabreak",
                 "RIP Burst - Attempted & failed instabreak",
                 "Pleb group - No instabreak attempts",
@@ -36,13 +65,16 @@
                 "LNHB success (intentional /gg not counted)"
             ],
             "Skorvald": [
+                "Shattering the Shattered - Smooth kill",
                 "Steadfast - Smooth Stability support",
                 "Taxi - 66% & 33% portals were used",
                 "We do cardio! - No portals used",
-                "Bye cruel world! - You got knocked off"
+                "Bye cruel world! - You got knocked off",
+                "DPS over 9000 - Hit 33% before dashes"
             ],
             "Artsariiv": [
-                "Fire with fire: DPS reflects successfully",
+                "Marble Masters - Smooth kill",
+                "Fire with fire - DPS reflects successfully",
                 "I got you! - You backup marble",
                 "Strike - Marble fail",
                 "I trusted! No Aegis/Stability in middle",
@@ -51,11 +83,15 @@
                 "RIP DPS - Got 2 or 3 skulls"
             ],
             "Arkk": [
+                "DDR Destroyers - Smooth kill",
                 "Why are you running? - You got feared",
                 "Skydiver - Fell from the platform",
                 "No SAK - Hit by orb",
+                "Pro SAK Pressers - No orb fail",
                 "Was it me? - Skull fail",
-                "SAK Abuse - Renegade dominates in CC"
+                "SAK Abuse - Renegade dominates in CC",
+                "Cheap - No Slaying Potion",
+                "Always optimizing - Used Slaying Potion"
             ]
         }
     },
@@ -65,11 +101,12 @@
                 "DwD success (intentional /gg not counted)"
             ],
             "Ai": [
-                "Death by Beyblade: Hit by spin"
+                "Relievers - Smooth kill",
+                "Death by Beyblade - Hit by spin"
             ],
             "Elemental Ai": [
-                "Forgotten mechanics: Reached cloud mechanic",
-                "Runs out from/with green",
+                "Forgotten mechanics: Reached clouds",
+                "Runs out from/with water green",
                 "Staying dry - Killed before water tornado"
             ],
             "Dark Ai": [
