@@ -1,10 +1,10 @@
 import React from "react";
-import Layout from "../components/layout";
+import Layout, {Paragraph} from "../components/layout";
 
-const App = (): JSX.Element => (
-    <Layout title="404">
-        Nothing to see here
+const NotFound = (): JSX.Element => (
+    <Layout title="404 Not Found">
+        <Paragraph align="center">Nothing to see here</Paragraph>
     </Layout>
 );
 
-export default App;
+export default NotFound;
