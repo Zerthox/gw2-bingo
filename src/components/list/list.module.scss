@@ -1,0 +1,20 @@
+@use "layout";
+@use "colors";
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+.entry {
+    margin: 5px 0;
+    padding: 5px 10px;
+    background: colors.$gray-light;
+    text-align: center;
+    @include layout.card;
+    .title {
+        font-weight: bold;
+    }
+    .content {
+        font-size: .9em;
+    }
+}
