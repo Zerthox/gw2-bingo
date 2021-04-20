@@ -3,13 +3,14 @@ import {PageProps} from "gatsby";
 import Layout, {Paragraph} from "../../components/layout";
 import Bingo from "../../components/bingo";
 import {v1 as convert} from "../../convert";
+import data from "../../data";
 
 const App = ({location}: PageProps): JSX.Element => {
     const ids = convert.decode(location.search.slice(1));
     return (
         <Layout title="Bingo Card">
             {
-                ids.length > 0 ? (
+                ids.length > 0 && ids.every((id) => id < data.all.length) ? (
                     <Bingo fields={ids}/>
                 ) : (
                     <>
