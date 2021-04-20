@@ -1,31 +1,16 @@
-import dataCM from "./cm.json";
+import data from "./data.json";
 
-interface Fractal {
-    global?: string[];
-    encounters?: {[encounter: string]: string[]};
-}
-
-type Data = {[fractal: string]: Fractal};
-
-export interface Field {
+export interface Fractal {
     fractal: string;
+    encounter?: string;
     event: string;
 }
 
-/** Flattens nested data into an array of fields. */
-const flatten = (data: Data): Field[] => Object.entries(data).map(([fractal, {global = [], encounters = {}}]) => {
-    const flatGlobals = global.map((event) => ({fractal: fractal, event}));
-    const flatEncounters = Object.entries(encounters).map(([encounter, fields]) => fields.map((event) => ({fractal: `${fractal} ${encounter}`, event}))).flat();
-    return flatGlobals.concat(flatEncounters);
-}).flat();
-
-const fieldsCM = flatten(dataCM);
-
 /** Collection of all available fields. */
-const getAll = (): Field[] => fieldsCM;
+const all = data.fields;
 
 /** Collection of all fields for CM. */
-const getCM = (): Field[] => fieldsCM;
+const cm = data.fields.filter((field) => field.fractal.endsWith("CM"));
 
 /** Generates a set of random IDs */
 const random = (size: number): Array<number> => {
@@ -39,4 +24,15 @@ const random = (size: number): Array<number> => {
     return result;
 };
 
-export default {getAll, getCM, random};
+export interface Field {
+    title: string;
+    content: string;
+}
+
+/** Converts fractal data to a field. */
+const toField = ({fractal, encounter, event}: Fractal): Field => ({
+    title: encounter ? `${fractal} ${encounter}` : fractal,
+    content: event
+});
+
+export default {all, cm, random, toField};

@@ -4,7 +4,7 @@ import {LinkButton} from "../components/button";
 import convert from "../convert";
 import data from "../data";
 
-const genRand = () => convert.encode(data.random(data.getCM().length));
+const genRand = () => convert.encode(data.random(data.cm.length));
 
 const App = (): JSX.Element => {
     const [rand, setRand] = useState(genRand);
@@ -19,7 +19,7 @@ const App = (): JSX.Element => {
                 Generate Bingo
             </LinkButton>
             <Paragraph>This page allows you to generate a bingo card for your Fractal CM runs.</Paragraph>
-            <Paragraph>Currently we feature a total of {data.getAll().length} different bingo fields!</Paragraph>
+            <Paragraph>Currently we feature a total of {data.all.length} different bingo fields!</Paragraph>
             <Paragraph>First time here? See <Link to="/how-to">How to play</Link>.</Paragraph>
         </Layout>
     );

@@ -1,0 +1,349 @@
+{
+    "fields": [
+        {
+            "fractal": "98-100CM",
+            "event": "You saw nothing! - Downed & got back up"
+        },
+        {
+            "fractal": "98-100CM",
+            "event": "Invincible - No downs"
+        },
+        {
+            "fractal": "98-100CM",
+            "event": "No amateurs - Everything first try"
+        },
+        {
+            "fractal": "98-100CM",
+            "event": "Cleared but had several fails"
+        },
+        {
+            "fractal": "98-100CM",
+            "event": "Who are these people? - Had to PUG"
+        },
+        {
+            "fractal": "98-100CM",
+            "event": "Kaffeklatsch - Run with Guild/friends"
+        },
+        {
+            "fractal": "98-100CM",
+            "event": "You carried group CC"
+        },
+        {
+            "fractal": "98-100CM",
+            "event": "Someone solos last % of a boss"
+        },
+        {
+            "fractal": "98-100CM",
+            "event": "Got carried - Died & group cleared"
+        },
+        {
+            "fractal": "98-100CM",
+            "event": "You carried group DPS or played Support"
+        },
+        {
+            "fractal": "98-100CM",
+            "event": "DPS loses to BS/Support"
+        },
+        {
+            "fractal": "98-100CM",
+            "event": "Survivor - Nothing killed you (except /gg)"
+        },
+        {
+            "fractal": "98-100CM",
+            "event": "Meta is a lie! - Non-meta group composition"
+        },
+        {
+            "fractal": "98-100CM",
+            "event": "God abandoned us - No Fractal Gods"
+        },
+        {
+            "fractal": "98-100CM",
+            "event": "Blessed - 2 or more Fractal Gods"
+        },
+        {
+            "fractal": "98-100CM",
+            "event": "No Pain No Fun - Bad instabilities"
+        },
+        {
+            "fractal": "98-100CM",
+            "event": "Lucky! - Dropped 7 or more Mystic Coins"
+        },
+        {
+            "fractal": "98-100CM",
+            "event": "No Luck - 0 Mystic Coin drops"
+        },
+        {
+            "fractal": "98-100CM",
+            "event": "Ranger Spirit died (unintentionally)"
+        },
+        {
+            "fractal": "98-100CM",
+            "event": "Technical difficulties: Someone had disconnect/crash"
+        },
+        {
+            "fractal": "98CM",
+            "encounter": "Nightmare",
+            "event": "Cheap - No Slaying Potions"
+        },
+        {
+            "fractal": "98CM",
+            "encounter": "Nightmare",
+            "event": "Always optimizing - Used Slaying Potions"
+        },
+        {
+            "fractal": "98CM",
+            "encounter": "Nightmare",
+            "event": "Min-maxing - Swapped to Slaying Sigils"
+        },
+        {
+            "fractal": "98CM",
+            "encounter": "MAMA",
+            "event": "Watchwork Wreckers - Smooth kill"
+        },
+        {
+            "fractal": "98CM",
+            "encounter": "MAMA",
+            "event": "Sad life - You got knocked"
+        },
+        {
+            "fractal": "98CM",
+            "encounter": "MAMA",
+            "event": "Spawned 2 poison fields"
+        },
+        {
+            "fractal": "98CM",
+            "encounter": "MAMA",
+            "event": "We are speed! Phased before first bubble"
+        },
+        {
+            "fractal": "98CM",
+            "encounter": "MAMA",
+            "event": "What is Staff? - Renegade not highest CC"
+        },
+        {
+            "fractal": "98CM",
+            "encounter": "Bullet Hell",
+            "event": "This is hard... - Full wipe at pre"
+        },
+        {
+            "fractal": "98CM",
+            "encounter": "Bullet Hell",
+            "event": "Infinite Condis - No Cleanse/Resistance"
+        },
+        {
+            "fractal": "98CM",
+            "encounter": "Bullet Hell",
+            "event": "Leecher - Someone went AFK during pre"
+        },
+        {
+            "fractal": "98CM",
+            "encounter": "Bullet Hell",
+            "event": "PvP Roleplay - You capped a circle"
+        },
+        {
+            "fractal": "98CM",
+            "encounter": "Bullet Hell",
+            "event": "Someone skipped with Choya Tonic"
+        },
+        {
+            "fractal": "98CM",
+            "encounter": "Bullet Hell",
+            "event": "Marathon - No Choya skip"
+        },
+        {
+            "fractal": "98CM",
+            "encounter": "Siax",
+            "event": "Serpent Slayers - Smooth kill"
+        },
+        {
+            "fractal": "98CM",
+            "encounter": "Siax",
+            "event": "Do we need a kite? - Mid spit"
+        },
+        {
+            "fractal": "98CM",
+            "encounter": "Siax",
+            "event": "No Aegis!? Got hit & spawned Hallucination"
+        },
+        {
+            "fractal": "98CM",
+            "encounter": "Ensolyss",
+            "event": "Serpent Slayers - Smooth kill"
+        },
+        {
+            "fractal": "98CM",
+            "encounter": "Ensolyss",
+            "event": "Pro CC - Successful instabreak"
+        },
+        {
+            "fractal": "98CM",
+            "encounter": "Ensolyss",
+            "event": "RIP Burst - Attempted & failed instabreak"
+        },
+        {
+            "fractal": "98CM",
+            "encounter": "Ensolyss",
+            "event": "Pleb group - No instabreak attempts"
+        },
+        {
+            "fractal": "98CM",
+            "encounter": "Ensolyss",
+            "event": "No teleport to mid after dash"
+        },
+        {
+            "fractal": "99CM",
+            "encounter": "Shattered Observatory",
+            "event": "LNHB success (intentional /gg not counted)"
+        },
+        {
+            "fractal": "99CM",
+            "encounter": "Skorvald",
+            "event": "Shattering the Shattered - Smooth kill"
+        },
+        {
+            "fractal": "99CM",
+            "encounter": "Skorvald",
+            "event": "Steadfast - Smooth Stability support"
+        },
+        {
+            "fractal": "99CM",
+            "encounter": "Skorvald",
+            "event": "Taxi - 66% & 33% portals were used"
+        },
+        {
+            "fractal": "99CM",
+            "encounter": "Skorvald",
+            "event": "We do cardio! - No portals used"
+        },
+        {
+            "fractal": "99CM",
+            "encounter": "Skorvald",
+            "event": "Bye cruel world! - You got knocked off"
+        },
+        {
+            "fractal": "99CM",
+            "encounter": "Skorvald",
+            "event": "DPS over 9000 - Hit 33% before dashes"
+        },
+        {
+            "fractal": "99CM",
+            "encounter": "Artsariiv",
+            "event": "Marble Masters - Smooth kill"
+        },
+        {
+            "fractal": "99CM",
+            "encounter": "Artsariiv",
+            "event": "Fire with fire - DPS reflects successfully"
+        },
+        {
+            "fractal": "99CM",
+            "encounter": "Artsariiv",
+            "event": "I got you! - You backup marble"
+        },
+        {
+            "fractal": "99CM",
+            "encounter": "Artsariiv",
+            "event": "Strike - Marble fail"
+        },
+        {
+            "fractal": "99CM",
+            "encounter": "Artsariiv",
+            "event": "I trusted! No Aegis/Stability in middle"
+        },
+        {
+            "fractal": "99CM",
+            "encounter": "Artsariiv",
+            "event": "Pro Firebrand - No Aegis/Stability fails"
+        },
+        {
+            "fractal": "99CM",
+            "encounter": "Artsariiv",
+            "event": "Consumable Consumer - Highest CC"
+        },
+        {
+            "fractal": "99CM",
+            "encounter": "Artsariiv",
+            "event": "RIP DPS - Got 2 or 3 skulls"
+        },
+        {
+            "fractal": "99CM",
+            "encounter": "Arkk",
+            "event": "DDR Destroyers - Smooth kill"
+        },
+        {
+            "fractal": "99CM",
+            "encounter": "Arkk",
+            "event": "Why are you running? - You got feared"
+        },
+        {
+            "fractal": "99CM",
+            "encounter": "Arkk",
+            "event": "Skydiver - Fell from the platform"
+        },
+        {
+            "fractal": "99CM",
+            "encounter": "Arkk",
+            "event": "No SAK - Hit by orb"
+        },
+        {
+            "fractal": "99CM",
+            "encounter": "Arkk",
+            "event": "Pro SAK Pressers - No orb fail"
+        },
+        {
+            "fractal": "99CM",
+            "encounter": "Arkk",
+            "event": "Was it me? - Skull fail"
+        },
+        {
+            "fractal": "99CM",
+            "encounter": "Arkk",
+            "event": "SAK Abuse - Renegade dominates in CC"
+        },
+        {
+            "fractal": "99CM",
+            "encounter": "Arkk",
+            "event": "Cheap - No Slaying Potion"
+        },
+        {
+            "fractal": "99CM",
+            "encounter": "Arkk",
+            "event": "Always optimizing - Used Slaying Potion"
+        },
+        {
+            "fractal": "100CM",
+            "encounter": "Sunqua Peak",
+            "event": "DwD success (intentional /gg not counted)"
+        },
+        {
+            "fractal": "100CM",
+            "encounter": "Ai",
+            "event": "Relievers - Smooth kill"
+        },
+        {
+            "fractal": "100CM",
+            "encounter": "Ai",
+            "event": "Death by Beyblade - Hit by spin"
+        },
+        {
+            "fractal": "100CM",
+            "encounter": "Elemental Ai",
+            "event": "Forgotten mechanics: Reached clouds"
+        },
+        {
+            "fractal": "100CM",
+            "encounter": "Elemental Ai",
+            "event": "Runs out from/with water green"
+        },
+        {
+            "fractal": "100CM",
+            "encounter": "Elemental Ai",
+            "event": "Staying dry - Killed before water tornado"
+        },
+        {
+            "fractal": "100CM",
+            "encounter": "Dark Ai",
+            "event": "No Sanctuary - Failed Sorrow CC"
+        }
+    ]
+}

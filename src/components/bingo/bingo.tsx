@@ -7,10 +7,7 @@ export interface BingoProps {
 }
 
 const Bingo = ({fields}: BingoProps): JSX.Element => (
-    <Card tiles={fields.map((id) => {
-        const {fractal, event} = data.getAll()[id];
-        return {title: fractal, content: event};
-    })}/>
+    <Card tiles={fields.map((id) => data.toField(data.all[id]))}/>
 );
 
 export default Bingo;
