@@ -3,7 +3,7 @@ import Card from "./card";
 import data from "../../data";
 
 export interface BingoProps {
-    fields: Array<number>;
+    fields: number[];
 }
 
 const Bingo = ({fields}: BingoProps): JSX.Element => (

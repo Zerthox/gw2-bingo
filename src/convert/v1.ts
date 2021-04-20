@@ -2,14 +2,14 @@
 const converter = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_";
 
 /** Encodes IDs as a 12 character base64 string. */
-const encode = (ids: Array<number>): string => {
+const encode = (ids: number[]): string => {
     // check ids length
     if (ids.length !== 9) {
         return "";
     }
 
     // convert into 4x 2-bit numbers
-    const numbers = [];
+    const numbers: number[] = [];
     for (const id of ids) {
         numbers.push(id & 3);
         numbers.push((id >> 2) & 3);
@@ -26,14 +26,14 @@ const encode = (ids: Array<number>): string => {
 };
 
 /** Decodes IDs from a 12 character base64 string. */
-const decode = (code: string): Array<number> => {
+const decode = (code: string): number[] => {
     // check code length
     if (code.length !== 12) {
         return [];
     }
 
     // decode numbers
-    const numbers = [];
+    const numbers: number[] = [];
     for (const char of code.split("")) {
         // convert it to 6-bit number
         const code = converter.indexOf(char);
@@ -50,7 +50,7 @@ const decode = (code: string): Array<number> => {
     }
 
     // group numbers to bytes
-    const ids = [];
+    const ids: number[] = [];
     for (let i = 0; i < numbers.length; i += 4) {
         ids.push(numbers[i] + (numbers[i + 1] << 2) + (numbers[i + 2] << 4) + (numbers [i + 3] << 6));
     }

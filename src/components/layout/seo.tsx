@@ -8,7 +8,7 @@ export interface SEOProps {
     description: string;
     author: string;
     lang?: string;
-    meta?: Array<MetaProp>;
+    meta?: MetaProp[];
 }
 
 const SEO = ({title, description, author, lang = "en", meta = []}: SEOProps): JSX.Element => (

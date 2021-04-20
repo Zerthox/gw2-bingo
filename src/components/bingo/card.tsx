@@ -5,7 +5,7 @@ import * as styles from "./card.module.scss";
 export type FieldProps = Omit<TileProps, "highlight">;
 
 export interface CardProps {
-    tiles: Array<FieldProps>;
+    tiles: FieldProps[];
 }
 
 const Card = ({tiles}: CardProps): JSX.Element => {

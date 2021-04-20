@@ -10,11 +10,11 @@ export interface Fractal {
 const all = data.fields;
 
 /** Collection of all fields for CM. */
-const cm = data.fields.filter((field) => field.fractal.endsWith("CM"));
+const cm = data.fields.filter(({fractal}) => fractal.endsWith("CM"));
 
 /** Generates a set of random IDs */
-const random = (size: number): Array<number> => {
-    const result = [];
+const random = (size: number): number[] => {
+    const result: number[] = [];
     while (result.length < 9) {
         const id = Math.floor(Math.random() * size);
         if (!result.includes(id)) {
