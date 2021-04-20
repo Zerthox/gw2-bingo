@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import Layout, {Link, Paragraph} from "../components/layout";
 import {LinkButton} from "../components/button";
-import convert from "./v1/convert";
+import {v1 as convert} from "../convert";
 import data from "../data";
 
 const genRand = () => convert.encode(data.random(data.cm.length));
