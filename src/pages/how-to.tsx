@@ -1,6 +1,5 @@
 import React from "react";
 import Layout, {Link, Paragraph} from "../components/layout";
-import {LinkButton} from "../components/button";
 import Bingo from "../components/bingo";
 
 const HowTo = (): JSX.Element => (
@@ -24,9 +23,6 @@ const HowTo = (): JSX.Element => (
         </Paragraph>
         <Paragraph>A bingo card looks like this:</Paragraph>
         <Bingo fields={[26, 13, 24, 5, 18, 25, 7, 2, 8]}/>
-        <Paragraph>
-            <LinkButton to="/">Back to Home</LinkButton>
-        </Paragraph>
     </Layout>
 );
 

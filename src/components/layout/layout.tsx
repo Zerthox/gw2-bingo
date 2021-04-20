@@ -1,11 +1,13 @@
 import React from "react";
 import {useStaticQuery, graphql} from "gatsby";
 import SEO from "./seo";
+import {LinkButton} from "../button";
 import * as styles from "./layout.module.scss";
 
 export interface LayoutProps {
     children: React.ReactNode;
     title?: string;
+    isHome?: boolean;
 }
 
 interface LayoutData {
@@ -18,7 +20,7 @@ interface LayoutData {
     }
 }
 
-const Layout = ({title = "", children}: LayoutProps): JSX.Element => {
+const Layout = ({title = "", isHome = false, children}: LayoutProps): JSX.Element => {
     const {site}: LayoutData = useStaticQuery(graphql`
         query {
             site {
@@ -43,6 +45,7 @@ const Layout = ({title = "", children}: LayoutProps): JSX.Element => {
                     <div className={styles.header}>{title || site.siteMetadata.title}</div>
                     <div className={styles.content}>
                         {children}
+                        {!isHome ? <LinkButton to="/" style={{marginTop: 20}}>Back to home</LinkButton> : null}
                     </div>
                 </div>
             </div>
