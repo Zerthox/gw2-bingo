@@ -2,7 +2,7 @@
     "fields": [
         {
             "fractal": "98-100CM",
-            "event": "You saw nothing! - Downed & got back up"
+            "event": "You saw nothing! - Downs & gets back up"
         },
         {
             "fractal": "98-100CM",
@@ -74,7 +74,7 @@
         },
         {
             "fractal": "98-100CM",
-            "event": "Ranger Spirit died (unintentionally)"
+            "event": "RIP - Ranger Spirit died (unintentionally)"
         },
         {
             "fractal": "98-100CM",
@@ -208,7 +208,7 @@
         {
             "fractal": "99CM",
             "encounter": "Skorvald",
-            "event": "Taxi - 66% & 33% portals were used"
+            "event": "Taxi - 66% & 33% portals used"
         },
         {
             "fractal": "99CM",
@@ -233,7 +233,7 @@
         {
             "fractal": "99CM",
             "encounter": "Artsariiv",
-            "event": "Fire with fire - DPS reflects successfully"
+            "event": "Fire with fire - DPS reflected successfully"
         },
         {
             "fractal": "99CM",
@@ -277,8 +277,8 @@
         },
         {
             "fractal": "99CM",
-            "encounter": "Arkk",
-            "event": "Skydiver - Fell from the platform"
+            "encounter": "Shattered Observatory",
+            "event": "Skydiver - Fell from any boss platform"
         },
         {
             "fractal": "99CM",
@@ -298,7 +298,7 @@
         {
             "fractal": "99CM",
             "encounter": "Arkk",
-            "event": "SAK Abuse - Renegade dominates in CC"
+            "event": "SAK Abuse - Renegade dominated in CC"
         },
         {
             "fractal": "99CM",
@@ -333,7 +333,7 @@
         {
             "fractal": "100CM",
             "encounter": "Elemental Ai",
-            "event": "Runs out from/with water green"
+            "event": "Someone ran out from/with water green"
         },
         {
             "fractal": "100CM",
@@ -344,6 +344,52 @@
             "fractal": "100CM",
             "encounter": "Dark Ai",
             "event": "No Sanctuary - Failed Sorrow CC"
+        },
+        {
+            "fractal": "100CM",
+            "encounter": "Ai",
+            "event": "Sanctuary is my 2nd name - Smooth CC"
+        },
+        {
+            "fractal": "98-100CM",
+            "event": "Pro Strats - Ran no heal on any boss"
+        },
+        {
+            "fractal": "98-100CM",
+            "event": "Impostor - You sabotaged someone else"
+        },
+        {
+            "fractal": "98-100CM",
+            "event": "Crewmate - Got sabotaged by someone"
+        },
+        {
+            "fractal": "98-100CM",
+            "event": "Weaver Roleplay - You downed a lot"
+        },
+        {
+            "fractal": "98CM",
+            "encounter": "Siax",
+            "event": "Disoriented - Someone went to wrong add"
+        },
+        {
+            "fractal": "98CM",
+            "encounter": "Siax",
+            "event": "Blind Trust - Trusted & got Aegis"
+        },
+        {
+            "fractal": "98CM",
+            "encounter": "Siax",
+            "event": "Big Exposed - 2nd breakbar in 3rd phase"
+        },
+        {
+            "fractal": "98CM",
+            "encounter": "Ensolyss",
+            "event": "Air Ensolyss - Knocked away"
+        },
+        {
+            "fractal": "98CM",
+            "encounter": "MAMA",
+            "event": "Someone went wrong direction at 25%"
         }
     ]
 }
