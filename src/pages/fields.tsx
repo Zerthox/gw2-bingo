@@ -1,17 +1,38 @@
 import React from "react";
 import Layout, {Paragraph} from "../components/layout";
 import List from "../components/list";
-import data, {Field} from "../data";
+import data, {Fractal} from "../data";
 
-const compare = (fieldA: Field, fieldB: Field) => {
+const encounters = [
+    "MAMA",
+    "Bullet Hell",
+    "Siax",
+    "Ensolyss",
+    "Skorvald",
+    "Artsariiv",
+    "Arkk",
+    "Ai",
+    "Elemental Ai",
+    "Dark Ai"
+];
+
+const compare = (a: Fractal, b: Fractal) => {
     // we parse the number at the start of the fractal string
-    const a = parseInt(fieldA.title);
-    const b = parseInt(fieldB.title);
+    const fractalA = parseInt(a.fractal);
+    const fractalB = parseInt(b.fractal);
+
+    // order of encounters within the CM fractals
+    const encounterA = a.encounter ? encounters.indexOf(a.encounter) : -2;
+    const encounterB = b.encounter ? encounters.indexOf(b.encounter) : -2;
 
     // compare them
-    if (a < b) {
+    if (fractalA < fractalB) {
         return -1;
-    } else if (a > b) {
+    } else if (fractalA > fractalB) {
+        return 1;
+    } else if (encounterA < encounterB) {
+        return -1;
+    } else if (encounterA > encounterB) {
         return 1;
     } else {
         return 0;
@@ -24,7 +45,7 @@ const Fields = (): JSX.Element => (
             Total count: {data.all.length} bingo fields
         </Paragraph>
         <List>
-            {data.all.map(data.toField).sort(compare)}
+            {data.all.sort(compare).map(data.toField)}
         </List>
     </Layout>
 );
