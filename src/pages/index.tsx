@@ -19,11 +19,15 @@ const App = (): JSX.Element => {
                 Generate Bingo
             </LinkButton>
             <Paragraph>This page allows you to generate a bingo card for your Fractal CM runs.</Paragraph>
+            <Paragraph>First time here? See <Link to="/how-to">How to play</Link>.</Paragraph>
             <Paragraph>
                 Currently we feature a total of {data.all.length} different bingo fields!
                 You can see all of them <Link to="/fields">here</Link>.
             </Paragraph>
-            <Paragraph>First time here? See <Link to="/how-to">How to play</Link>.</Paragraph>
+            <Paragraph>
+                Got good ideas?
+                Check the <Link to="https://github.com/Zerthox/gw2-bingo">GitHub Repo</Link>.
+            </Paragraph>
         </Layout>
     );
 };
