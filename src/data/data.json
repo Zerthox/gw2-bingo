@@ -2,7 +2,7 @@
     "fields": [
         {
             "fractal": "98-100CM",
-            "event": "You saw nothing! - Downs & gets back up"
+            "event": "You saw nothing! - Downed & got back up"
         },
         {
             "fractal": "98-100CM",
@@ -283,12 +283,12 @@
         {
             "fractal": "99CM",
             "encounter": "Arkk",
-            "event": "No SAK - Hit by orb"
+            "event": "No SAK - Someone got hit by orb"
         },
         {
             "fractal": "99CM",
             "encounter": "Arkk",
-            "event": "Pro SAK Pressers - No orb fail"
+            "event": "Pro SAK Pressers - No orb fails"
         },
         {
             "fractal": "99CM",
@@ -390,6 +390,20 @@
             "fractal": "98CM",
             "encounter": "MAMA",
             "event": "Someone went wrong direction at 25%"
+        },
+        {
+            "fractal": "99CM",
+            "encounter": "Artsariiv",
+            "event": "My Taw Shot... - Failed/stolen reflect"
+        },
+        {
+            "fractal": "99CM",
+            "encounter": "Arkk",
+            "event": "No bubble - Renegade failed Anomaly"
+        },
+        {
+            "fractal": "98-100CM",
+            "event": "Wait! - Someone on wrong traits/gear"
         }
     ]
 }
