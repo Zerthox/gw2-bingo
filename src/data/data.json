@@ -62,7 +62,7 @@
         },
         {
             "fractal": "98-100CM",
-            "event": "No Pain No Fun - Bad instabilities"
+            "event": "No Pain No Fun - Bad instabs for 2 or more CMs"
         },
         {
             "fractal": "98-100CM",
@@ -74,26 +74,23 @@
         },
         {
             "fractal": "98-100CM",
-            "event": "RIP - Ranger Spirit died (unintentionally)"
+            "event": "RIP - Spirit/Minion died (unintentionally)"
         },
         {
             "fractal": "98-100CM",
             "event": "Technical difficulties: Someone had disconnect/crash"
         },
         {
-            "fractal": "98CM",
-            "encounter": "Nightmare",
-            "event": "Cheap - No Slaying Potion"
+            "fractal": "98-100CM",
+            "event": "Diversity - Swapped class or build"
         },
         {
-            "fractal": "98CM",
-            "encounter": "Nightmare",
-            "event": "Always optimizing - Used Slaying Potion"
+            "fractal": "98-100CM",
+            "event": "Keep it simple - Played same class everywhere"
         },
         {
-            "fractal": "98CM",
-            "encounter": "Nightmare",
-            "event": "Min-maxing - Swapped to Slaying Sigils"
+            "fractal": "98-100CM",
+            "event": "Min-maxing - Used Slaying Potion/Sigils"
         },
         {
             "fractal": "98CM",
@@ -301,14 +298,14 @@
             "event": "SAK Abuse - Renegade dominated in CC"
         },
         {
-            "fractal": "99CM",
-            "encounter": "Arkk",
-            "event": "Cheap - No Slaying Potion"
+            "fractal": "98-99CM",
+            "encounter": "Old",
+            "event": "Old but gold - Power DPS comp in old CMs"
         },
         {
-            "fractal": "99CM",
-            "encounter": "Arkk",
-            "event": "Always optimizing - Used Slaying Potion"
+            "fractal": "98-99CM",
+            "encounter": "Old",
+            "event": "New meta - Condi DPS comp in old CMs"
         },
         {
             "fractal": "100CM",
@@ -343,7 +340,7 @@
         {
             "fractal": "100CM",
             "encounter": "Dark Ai",
-            "event": "No Sanctuary - Failed Sorrow CC"
+            "event": "Where is Sanctuary? - Failed a Sorrow"
         },
         {
             "fractal": "100CM",
@@ -404,6 +401,39 @@
         {
             "fractal": "98-100CM",
             "event": "Wait! - Someone on wrong traits/gear"
+        },
+        {
+            "fractal": "100CM",
+            "encounter": "Dark Ai",
+            "event": "Necro OP - Epi strat for Sorrows"
+        },
+        {
+            "fractal": "100CM",
+            "encounter": "Ai",
+            "event": "Players stacked & survived during circles"
+        },
+        {
+            "fractal": "98-100CM",
+            "event": "Deserter - Someone left mid run"
+        },
+        {
+            "fractal": "98-100CM",
+            "event": "Healing the boss - Someone with low DPS"
+        },
+        {
+            "fractal": "100CM",
+            "encounter": "Dark Ai",
+            "event": "Slowpoke - Fear got someone"
+        },
+        {
+            "fractal": "100CM",
+            "encounter": "Dark Ai",
+            "event": "Light-footed - No Fear fails"
+        },
+        {
+            "fractal": "100CM",
+            "encounter": "Ai",
+            "event": "To Narnia: Boss dashed to middle of nowhere"
         }
     ]
 }
