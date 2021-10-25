@@ -14,6 +14,7 @@ export interface Fractal {
     scales: number[];
 }
 
+/** Convert a fractal ID to the corresponding fractal data. */
 const toFractal = (id: number): Fractal => fractalData.fractals[id];
 
 /** Collection of fractal data. */
@@ -23,7 +24,7 @@ const fractals = {
     dailies: fractalData.dailies.map((fractals) => fractals.map(toFractal))
 };
 
-/** Todays Fractal dailies */
+/** Todays fractal dailies */
 const dailiesToday = (): Fractal[] => fractals.dailies[(Math.floor(Date.now() / DAY) + OFFSET) % 15];
 
 export interface Field {
@@ -39,22 +40,27 @@ const fields = {
 };
 
 
-/** Converts field data to a field. */
+/** Converts field data to an item. */
 const toItem = ({fractal, encounter, event}: Field): Item => ({
     title: encounter ? `${fractal} ${encounter}` : fractal,
     content: event
 });
 
-/** Generates a set of random IDs */
-const random = (size: number): number[] => {
-    const result: number[] = [];
-    while (result.length < 9) {
-        const id = Math.floor(Math.random() * size);
-        if (!result.includes(id)) {
-            result.push(id);
+/** Generates a set of random field IDs */
+const random = (whitelist: Field[] = fields.all): number[] => {
+    if (whitelist.length < 9) {
+        return [];
+    } else {
+        const result: number[] = [];
+        while (result.length < 9) {
+            const generated = whitelist[Math.floor(Math.random() * whitelist.length)];
+            const id = fields.all.findIndex((field) => field === generated);
+            if (!result.includes(id)) {
+                result.push(id);
+            }
         }
+        return result;
     }
-    return result;
 };
 
 export {fractals, toFractal, dailiesToday, fields, random, toItem};

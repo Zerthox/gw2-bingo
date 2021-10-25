@@ -3,7 +3,7 @@ import Layout, {Link, Paragraph, Checkbox, Grid, LinkButton} from "../components
 import {v1 as convert} from "../convert";
 import {fractals, dailiesToday, fields, random} from "../data";
 
-const genRand = () => convert.encode(random(fields.cm.length));
+const genRand = () => convert.encode(random(fields.cm));
 
 const App = (): JSX.Element => {
     const [boxes, setBoxes] = useState([
