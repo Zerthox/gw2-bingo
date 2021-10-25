@@ -1,9 +1,9 @@
 import React from "react";
-import {Display} from "../../data";
 import * as styles from "./list.module.scss";
+import {Item} from ".";
 
 export interface ListProps {
-    children: Display[]
+    children: Item[]
 }
 
 const List = ({children}: ListProps): JSX.Element => (

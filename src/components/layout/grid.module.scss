@@ -1,0 +1,8 @@
+@use "layout";
+@use "colors";
+
+.grid {
+    display: grid;
+    grid: auto-flow / 1fr 1fr 1fr;
+    gap: 5px 20px;
+}

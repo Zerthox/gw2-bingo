@@ -1,12 +1,20 @@
 import React, {useState} from "react";
-import Layout, {Link, Paragraph} from "../components/layout";
-import {LinkButton} from "../components/button";
+import Layout, {Link, Paragraph, Checkbox, Grid, LinkButton} from "../components/layout";
 import {v1 as convert} from "../convert";
-import {fields, random} from "../data";
+import {fractals, dailiesToday, fields, random} from "../data";
 
 const genRand = () => convert.encode(random(fields.cm.length));
 
 const App = (): JSX.Element => {
+    const [boxes, setBoxes] = useState([
+        ...fractals.all.slice(1).map((fractal) => ({
+            name: fractal.name,
+            checked: dailiesToday().includes(fractal)
+        })),
+        {name: "Nightmare CM", checked: true},
+        {name: "Shattered Observatory CM", checked: true},
+        {name: "Sunqua Peak CM", checked: true}
+    ]);
     const [rand, setRand] = useState(genRand);
     return (
         <Layout isHome={true}>
@@ -18,6 +26,21 @@ const App = (): JSX.Element => {
             >
                 Generate Bingo
             </LinkButton>
+            <Grid>
+                {boxes.map(({name, checked}, i) => (
+                    <Checkbox
+                        key={i}
+                        checked={checked}
+                        disabled
+                        onChange={(checked) => {
+                            boxes[i].checked = checked;
+                            setBoxes([...boxes]);
+                        }}
+                    >
+                        {name}
+                    </Checkbox>
+                ))}
+            </Grid>
             <Paragraph>This page allows you to generate a bingo card for your Fractal CM runs.</Paragraph>
             <Paragraph>First time here? See <Link to="/how-to">How to play</Link>.</Paragraph>
             <Paragraph>

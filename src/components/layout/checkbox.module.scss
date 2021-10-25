@@ -1,0 +1,44 @@
+@use "layout";
+@use "colors";
+
+.checkbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    &.disabled {
+        opacity: .3;
+        cursor: not-allowed;
+    }
+}
+
+.input {
+    width: 1.5em;
+    height: 1.5em;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    appearance: none;
+    border: 2px solid hsla(0, 0%, 100%, .3);
+    @include layout.card(3px);
+    @include layout.transition;
+    &::after {
+        content: "";
+        width: 50%;
+        height: 50%;
+        background: transparent;
+        border-radius: 1px;
+        @include layout.transition;
+    }
+    &:checked {
+        border-color: colors.$link;
+        &::after {
+            background: colors.$link;
+        }
+    }
+}
+
+.label {
+    margin-left: 0.5em;
+}

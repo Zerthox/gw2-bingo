@@ -1,8 +1,8 @@
-@mixin transition($prop: all) {
-    transition: $prop .1s ease;
+@mixin transition($prop: all, $time: .1s) {
+    transition: $prop $time ease;
 }
 
-@mixin card {
-    border-radius: 5px;
+@mixin card($rounding: 5px) {
+    border-radius: $rounding;
     box-shadow: 0 0 3px rgba(0, 0, 0, .1);
 }
