@@ -2,8 +2,11 @@ import fractalData from "./fractals.json";
 import fieldData from "./fields.json";
 import {Item} from "../components/layout";
 
-/** One day in millisceonds. */
+/** One day in milliseconds. */
 const DAY = 24 * 60 * 60 * 1000;
+
+/** Base offset in the daily rotation. */
+const OFFSET = 8;
 
 export interface Fractal {
     id: number;
@@ -20,7 +23,8 @@ const fractals = {
     dailies: fractalData.dailies.map((fractals) => fractals.map(toFractal))
 };
 
-const dailiesToday = (): Fractal[] => fractals.dailies[(Date.now() / DAY) % 15];
+/** Todays Fractal dailies */
+const dailiesToday = (): Fractal[] => fractals.dailies[(Math.floor(Date.now() / DAY) + OFFSET) % 15];
 
 export interface Field {
     fractal: string;
