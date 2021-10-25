@@ -1,0 +1,131 @@
+{
+    "fractals": [
+        {
+            "id": 0,
+            "name": "Mistlock Observatory",
+            "scales": []
+        },
+        {
+            "id": 1,
+            "name": "Volcanic",
+            "scales": [1, 19, 28, 52, 92]
+        },
+        {
+            "id": 2,
+            "name": "Uncategorized",
+            "scales": [2, 36, 44, 62, 79, 91]
+        },
+        {
+            "id": 3,
+            "name": "Snowblind",
+            "scales": [3, 27, 51, 68, 86, 93]
+        },
+        {
+            "id": 4,
+            "name": "Urban Battleground",
+            "scales": [4, 31, 57, 66, 85]
+        },
+        {
+            "id": 5,
+            "name": "Swampland",
+            "scales": [5, 17, 32, 56, 77, 89]
+        },
+        {
+            "id": 6,
+            "name": "Cliffside",
+            "scales": [6, 21, 47, 69, 94]
+        },
+        {
+            "id": 7,
+            "name": "Aquatic Ruins",
+            "scales": [7, 26, 61, 76]
+        },
+        {
+            "id": 8,
+            "name": "Underground Facility",
+            "scales": [8, 29, 53, 81]
+        },
+        {
+            "id": 9,
+            "name": "Solid Ocean",
+            "scales": [20, 35, 45, 60, 80]
+        },
+        {
+            "id": 10,
+            "name": "Molten Furnace",
+            "scales": [9, 22, 39, 58, 83]
+        },
+        {
+            "id": 11,
+            "name": "Molten Boss",
+            "scales": [	10, 40, 70, 90]
+        },
+        {
+            "id": 12,
+            "name": "Aetherblade",
+            "scales": [14, 46, 65, 71, 96]
+        },
+        {
+            "id": 13,
+            "name": "Thaumanova Reactor",
+            "scales": [15, 34, 43, 55, 64, 82]
+        },
+        {
+            "id": 14,
+            "name": "Captain Mai Trin Boss",
+            "scales": [18, 42, 72, 95]
+        },
+        {
+            "id": 15,
+            "name": "Chaos",
+            "scales": [13, 30, 38, 63, 88, 97]
+        },
+        {
+            "id": 16,
+            "name": "Nightmare",
+            "scales": [23, 48, 73, 98]
+        },
+        {
+            "id": 17,
+            "name": "Shattered Observatory",
+            "scales": [24, 49, 74, 99]
+        },
+        {
+            "id": 18,
+            "name": "Twilight Oasis",
+            "scales": [16, 41, 59, 87]
+        },
+        {
+            "id": 19,
+            "name": "Deepstone",
+            "scales": [11, 33, 67, 84]
+        },
+        {
+            "id": 20,
+            "name": "Siren's Reef",
+            "scales": [12, 37, 54, 78]
+        },
+        {
+            "id": 21,
+            "name": "Sunqua Peak",
+            "scales": [25, 50, 75, 100]
+        }
+    ],
+    "dailies": [
+        [4, 8, 21],
+        [12, 15, 16],
+        [6, 11, 20],
+        [5, 9, 19],
+        [11, 14, 17],
+        [1, 3, 16],
+        [2, 12, 13],
+        [6, 15, 18],
+        [14, 19, 21],
+        [3, 9, 16],
+        [2, 4, 15],
+        [10, 19, 20],
+        [8, 11, 18],
+        [1, 5, 17],
+        [3, 7, 13]
+    ]
+}

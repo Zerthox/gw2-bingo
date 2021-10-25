@@ -1,16 +1,45 @@
-import data from "./data.json";
+import fractalData from "./fractals.json";
+import fieldData from "./fields.json";
+import {Item} from "../components/layout";
+
+/** One day in millisceonds. */
+const DAY = 24 * 60 * 60 * 1000;
 
 export interface Fractal {
+    id: number;
+    name: string;
+    scales: number[];
+}
+
+const toFractal = (id: number): Fractal => fractalData.fractals[id];
+
+/** Collection of fractal data. */
+const fractals = {
+    all: fractalData.fractals,
+    cm: [16, 17, 21].map(toFractal),
+    dailies: fractalData.dailies.map((fractals) => fractals.map(toFractal))
+};
+
+const dailiesToday = (): Fractal[] => fractals.dailies[(Date.now() / DAY) % 15];
+
+export interface Field {
     fractal: string;
     encounter?: string;
     event: string;
 }
 
-/** Collection of all available fields. */
-const all = data.fields;
+/** Collection of field data. */
+const fields = {
+    all: fieldData.fields,
+    cm: fieldData.fields.filter(({fractal}) => fractal.endsWith("CM"))
+};
 
-/** Collection of all fields for CM. */
-const cm = data.fields.filter(({fractal}) => fractal.endsWith("CM"));
+
+/** Converts field data to a field. */
+const toItem = ({fractal, encounter, event}: Field): Item => ({
+    title: encounter ? `${fractal} ${encounter}` : fractal,
+    content: event
+});
 
 /** Generates a set of random IDs */
 const random = (size: number): number[] => {
@@ -24,15 +53,4 @@ const random = (size: number): number[] => {
     return result;
 };
 
-export interface Field {
-    title: string;
-    content: string;
-}
-
-/** Converts fractal data to a field. */
-const toField = ({fractal, encounter, event}: Fractal): Field => ({
-    title: encounter ? `${fractal} ${encounter}` : fractal,
-    content: event
-});
-
-export default {all, cm, random, toField};
+export {fractals, toFractal, dailiesToday, fields, random, toItem};

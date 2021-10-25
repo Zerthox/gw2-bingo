@@ -74,7 +74,7 @@
         },
         {
             "fractal": "98-100CM",
-            "event": "RIP - Spirit/Minion died (unintentionally)"
+            "event": "Spirit/Minion died (unintentionally)"
         },
         {
             "fractal": "98-100CM",
@@ -95,12 +95,12 @@
         {
             "fractal": "98CM",
             "encounter": "MAMA",
-            "event": "Watchwork Wreckers - Smooth kill"
+            "event": "Smooth kill"
         },
         {
             "fractal": "98CM",
             "encounter": "MAMA",
-            "event": "Sad life - You got knocked"
+            "event": "You got knocked"
         },
         {
             "fractal": "98CM",
@@ -115,12 +115,12 @@
         {
             "fractal": "98CM",
             "encounter": "MAMA",
-            "event": "What is Staff? - Renegade not highest CC"
+            "event": "Renegade not highest CC"
         },
         {
             "fractal": "98CM",
             "encounter": "Bullet Hell",
-            "event": "This is hard... - Full wipe at pre"
+            "event": "Full wipe at pre"
         },
         {
             "fractal": "98CM",
@@ -145,17 +145,17 @@
         {
             "fractal": "98CM",
             "encounter": "Bullet Hell",
-            "event": "Marathon - No Choya skip"
+            "event": "No Choya skip"
         },
         {
             "fractal": "98CM",
             "encounter": "Siax",
-            "event": "Serpent Slayers - Smooth kill"
+            "event": "Smooth kill"
         },
         {
             "fractal": "98CM",
             "encounter": "Siax",
-            "event": "Do we need a kite? - Mid spit"
+            "event": "Mid spit"
         },
         {
             "fractal": "98CM",
@@ -165,7 +165,7 @@
         {
             "fractal": "98CM",
             "encounter": "Ensolyss",
-            "event": "Serpent Slayers - Smooth kill"
+            "event": "Smooth kill"
         },
         {
             "fractal": "98CM",
@@ -175,12 +175,12 @@
         {
             "fractal": "98CM",
             "encounter": "Ensolyss",
-            "event": "RIP Burst - Attempted & failed instabreak"
+            "event": "Attempted & failed instabreak"
         },
         {
             "fractal": "98CM",
             "encounter": "Ensolyss",
-            "event": "Pleb group - No instabreak attempts"
+            "event": "No instabreak attempts"
         },
         {
             "fractal": "98CM",
@@ -195,12 +195,12 @@
         {
             "fractal": "99CM",
             "encounter": "Skorvald",
-            "event": "Shattering the Shattered - Smooth kill"
+            "event": "Smooth kill"
         },
         {
             "fractal": "99CM",
             "encounter": "Skorvald",
-            "event": "Steadfast - Smooth Stability support"
+            "event": "Smooth Stability support"
         },
         {
             "fractal": "99CM",
@@ -215,7 +215,7 @@
         {
             "fractal": "99CM",
             "encounter": "Skorvald",
-            "event": "Bye cruel world! - You got knocked off"
+            "event": "You got knocked off"
         },
         {
             "fractal": "99CM",
@@ -230,42 +230,42 @@
         {
             "fractal": "99CM",
             "encounter": "Artsariiv",
-            "event": "Fire with fire - DPS reflected successfully"
+            "event": "DPS reflected successfully"
         },
         {
             "fractal": "99CM",
             "encounter": "Artsariiv",
-            "event": "I got you! - You backup marble"
+            "event": "You backup marble"
         },
         {
             "fractal": "99CM",
             "encounter": "Artsariiv",
-            "event": "Strike - Marble fail"
+            "event": "Marble fail"
         },
         {
             "fractal": "99CM",
             "encounter": "Artsariiv",
-            "event": "I trusted! No Aegis/Stability in middle"
+            "event": "No Aegis/Stability in middle"
         },
         {
             "fractal": "99CM",
             "encounter": "Artsariiv",
-            "event": "Pro Firebrand - No Aegis/Stability fails"
+            "event": "Always Aegis/Stability in middle"
         },
         {
             "fractal": "99CM",
             "encounter": "Artsariiv",
-            "event": "Consumable Consumer - Highest CC"
+            "event": "Highest CC"
         },
         {
             "fractal": "99CM",
             "encounter": "Artsariiv",
-            "event": "RIP DPS - Got 2 or 3 skulls"
+            "event": "Got 2 or 3 skulls"
         },
         {
             "fractal": "99CM",
             "encounter": "Arkk",
-            "event": "DDR Destroyers - Smooth kill"
+            "event": "Smooth kill"
         },
         {
             "fractal": "99CM",
@@ -280,32 +280,32 @@
         {
             "fractal": "99CM",
             "encounter": "Arkk",
-            "event": "No SAK - Someone got hit by orb"
+            "event": "Someone got hit by orb"
         },
         {
             "fractal": "99CM",
             "encounter": "Arkk",
-            "event": "Pro SAK Pressers - No orb fails"
+            "event": "SAK OP - No orb fails"
         },
         {
             "fractal": "99CM",
             "encounter": "Arkk",
-            "event": "Was it me? - Skull fail"
+            "event": "Skull fail"
         },
         {
             "fractal": "99CM",
             "encounter": "Arkk",
-            "event": "SAK Abuse - Renegade dominated in CC"
+            "event": "Renegade dominated in CC"
         },
         {
             "fractal": "98-99CM",
             "encounter": "Old",
-            "event": "Old but gold - Power DPS comp in old CMs"
+            "event": "Old but gold - Power DPS in old CMs"
         },
         {
             "fractal": "98-99CM",
             "encounter": "Old",
-            "event": "New meta - Condi DPS comp in old CMs"
+            "event": "New meta - Condi DPS in old CMs"
         },
         {
             "fractal": "100CM",
@@ -315,7 +315,7 @@
         {
             "fractal": "100CM",
             "encounter": "Ai",
-            "event": "Relievers - Smooth kill"
+            "event": "Smooth kill"
         },
         {
             "fractal": "100CM",
@@ -340,12 +340,12 @@
         {
             "fractal": "100CM",
             "encounter": "Dark Ai",
-            "event": "Where is Sanctuary? - Failed a Sorrow"
+            "event": "Failed a Sorrow"
         },
         {
             "fractal": "100CM",
             "encounter": "Ai",
-            "event": "Sanctuary is my 2nd name - Smooth CC"
+            "event": "Smooth CC"
         },
         {
             "fractal": "98-100CM",
@@ -371,12 +371,12 @@
         {
             "fractal": "98CM",
             "encounter": "Siax",
-            "event": "Blind Trust - Trusted & got Aegis"
+            "event": "No Aegis/Stability fails"
         },
         {
             "fractal": "98CM",
             "encounter": "Siax",
-            "event": "Big Exposed - 2nd breakbar in 3rd phase"
+            "event": "Broke 2nd breakbar below 33%"
         },
         {
             "fractal": "98CM",
@@ -391,12 +391,12 @@
         {
             "fractal": "99CM",
             "encounter": "Artsariiv",
-            "event": "My Taw Shot... - Failed/stolen reflect"
+            "event": "Failed/stolen reflect"
         },
         {
             "fractal": "99CM",
             "encounter": "Arkk",
-            "event": "No bubble - Renegade failed Anomaly"
+            "event": "No bubble - Failed Anomaly"
         },
         {
             "fractal": "98-100CM",
@@ -434,6 +434,18 @@
             "fractal": "100CM",
             "encounter": "Ai",
             "event": "To Narnia: Boss dashed to middle of nowhere"
+        },
+        {
+            "fractal": "Dailies",
+            "event": "Someone without Pots"
+        },
+        {
+            "fractal": "Uncategorized",
+            "event": "Someone fails JP at start"
+        },
+        {
+            "fractal": "Uncategorized",
+            "event": "Skipped JP after Old Tom"
         }
     ]
 }
