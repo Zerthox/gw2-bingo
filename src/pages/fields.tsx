@@ -1,7 +1,6 @@
 import React from "react";
-import Layout, {Paragraph} from "../components/layout";
-import List from "../components/list";
-import data, {Fractal} from "../data";
+import Layout, {Paragraph, List} from "../components/layout";
+import {fields, toItem, Field} from "../data";
 
 const encounters = [
     "MAMA",
@@ -16,7 +15,7 @@ const encounters = [
     "Dark Ai"
 ];
 
-const compare = (a: Fractal, b: Fractal) => {
+const compare = (a: Field, b: Field) => {
     // we parse the number at the start of the fractal string
     const fractalA = parseInt(a.fractal);
     const fractalB = parseInt(b.fractal);
@@ -42,10 +41,10 @@ const compare = (a: Fractal, b: Fractal) => {
 const Fields = (): JSX.Element => (
     <Layout title="Bingo Fields">
         <Paragraph align="center">
-            Total count: {data.all.length} bingo fields
+            Total count: {fields.all.length} bingo fields
         </Paragraph>
         <List>
-            {data.all.sort(compare).map(data.toField)}
+            {fields.all.sort(compare).map(toItem)}
         </List>
     </Layout>
 );

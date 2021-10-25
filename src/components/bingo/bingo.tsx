@@ -1,13 +1,13 @@
 import React from "react";
 import Card from "./card";
-import data from "../../data";
+import {fields, toItem} from "../../data";
 
 export interface BingoProps {
-    fields: number[];
+    ids: number[];
 }
 
-const Bingo = ({fields}: BingoProps): JSX.Element => (
-    <Card tiles={fields.map((id) => data.toField(data.all[id]))}/>
+const Bingo = ({ids}: BingoProps): JSX.Element => (
+    <Card tiles={ids.map((id) => toItem(fields.all[id]))}/>
 );
 
 export default Bingo;

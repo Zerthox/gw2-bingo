@@ -22,7 +22,7 @@ const HowTo = (): JSX.Element => (
             If you are up for mayhem, you can even generate the cards before the run.
         </Paragraph>
         <Paragraph>A bingo card looks like this:</Paragraph>
-        <Bingo fields={[46, 72, 24, 10, 51, 0, 62, 36, 40]}/>
+        <Bingo ids={[46, 72, 24, 10, 51, 0, 62, 36, 40]}/>
     </Layout>
 );
 

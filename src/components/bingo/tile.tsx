@@ -1,9 +1,13 @@
 import React from "react";
 import classNames from "classnames";
-import {Field} from "../../data";
 import * as styles from "./tile.module.scss";
 
-export interface TileProps extends Field {
+export interface Item {
+    title: string;
+    content: string;
+}
+
+export interface TileProps extends Item {
     highlight: boolean;
     className?: string;
     onClick?: () => void;
