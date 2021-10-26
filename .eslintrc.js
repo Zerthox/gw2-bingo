@@ -23,9 +23,10 @@ module.exports = {
     ],
     rules: {
         "comma-dangle": ["error", "never"],
-        "indent": ["error", 4],
+        "indent": ["error", 4, {"SwitchCase": 1}],
         "max-len": "off",
         "quotes": ["error", "double"],
+        "operator-linebreak": ["error", "before"],
         "require-jsdoc": "off",
         "valid-jsdoc": "off",
         "import/extensions": ["error", {
