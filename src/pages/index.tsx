@@ -5,7 +5,6 @@ import {fractals, dailiesToday, fields, random, Field} from "../data";
 
 const sorted = fractals.all.slice(1).sort((a, b) => a.name.localeCompare(b.name));
 
-
 interface Box {
     name: string;
     checked: boolean;
