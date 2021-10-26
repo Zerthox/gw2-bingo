@@ -17,23 +17,23 @@
             "event": "Cleared but had several fails"
         },
         {
-            "fractal": "98-100CM",
+            "fractal": "All",
             "event": "Who are these people? - Had to PUG"
         },
         {
-            "fractal": "98-100CM",
+            "fractal": "All",
             "event": "Kaffeklatsch - Run with Guild/friends"
         },
         {
-            "fractal": "98-100CM",
+            "fractal": "All",
             "event": "You carried group CC"
         },
         {
-            "fractal": "98-100CM",
+            "fractal": "All",
             "event": "Someone solos last % of a boss"
         },
         {
-            "fractal": "98-100CM",
+            "fractal": "All",
             "event": "Got carried - Died & group cleared"
         },
         {
@@ -53,11 +53,11 @@
             "event": "Meta is a lie! - Non-meta group composition"
         },
         {
-            "fractal": "98-100CM",
+            "fractal": "All",
             "event": "God abandoned us - No Fractal Gods"
         },
         {
-            "fractal": "98-100CM",
+            "fractal": "All",
             "event": "Blessed - 2 or more Fractal Gods"
         },
         {
@@ -77,7 +77,7 @@
             "event": "Spirit/Minion died (unintentionally)"
         },
         {
-            "fractal": "98-100CM",
+            "fractal": "All",
             "event": "Technical difficulties: Someone had disconnect/crash"
         },
         {
@@ -352,15 +352,15 @@
             "event": "Pro Strats - Ran no heal on any boss"
         },
         {
-            "fractal": "98-100CM",
+            "fractal": "All",
             "event": "Impostor - You sabotaged someone else"
         },
         {
-            "fractal": "98-100CM",
+            "fractal": "All",
             "event": "Crewmate - Got sabotaged by someone"
         },
         {
-            "fractal": "98-100CM",
+            "fractal": "All",
             "event": "Weaver Roleplay - You downed a lot"
         },
         {
@@ -399,7 +399,7 @@
             "event": "No bubble - Failed Anomaly"
         },
         {
-            "fractal": "98-100CM",
+            "fractal": "All",
             "event": "Wait! - Someone on wrong traits/gear"
         },
         {
@@ -413,7 +413,7 @@
             "event": "Players stacked & survived during circles"
         },
         {
-            "fractal": "98-100CM",
+            "fractal": "All",
             "event": "Deserter - Someone left mid run"
         },
         {

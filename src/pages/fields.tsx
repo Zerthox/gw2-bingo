@@ -15,26 +15,41 @@ const encounters = [
     "Dark Ai"
 ];
 
+const scale = (fractal: string) => {
+    if (fractal === "All") {
+        // all to front
+        return -2;
+    } else if (fractal === "Dailies") {
+        // dailies after
+        return -1;
+    } else if (fractal.endsWith("CM")) {
+        // parse scale for cm
+        return parseInt(fractal);
+    } else {
+        // normal for regular
+        return 0;
+    }
+};
+
 const compare = (a: Field, b: Field) => {
-    // we parse the number at the start of the fractal string
-    const fractalA = parseInt(a.fractal);
-    const fractalB = parseInt(b.fractal);
+    const scaleA = scale(a.fractal);
+    const scaleB = scale(b.fractal);
 
     // order of encounters within the CM fractals
     const encounterA = a.encounter ? encounters.indexOf(a.encounter) : -2;
     const encounterB = b.encounter ? encounters.indexOf(b.encounter) : -2;
 
-    // compare them
-    if (fractalA < fractalB) {
+    // sort by scale, then encounter, then alphabetically
+    if (scaleA < scaleB) {
         return -1;
-    } else if (fractalA > fractalB) {
+    } else if (scaleA > scaleB) {
         return 1;
     } else if (encounterA < encounterB) {
         return -1;
     } else if (encounterA > encounterB) {
         return 1;
     } else {
-        return 0;
+        return a.fractal.localeCompare(b.fractal);
     }
 };
 
@@ -44,7 +59,7 @@ const Fields = (): JSX.Element => (
             Total count: {fields.all.length} bingo fields
         </Paragraph>
         <List>
-            {fields.all.sort(compare).map(toItem)}
+            {[...fields.all].sort(compare).map(toItem)}
         </List>
     </Layout>
 );

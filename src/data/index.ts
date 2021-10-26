@@ -2,6 +2,8 @@ import fractalData from "./fractals.json";
 import fieldData from "./fields.json";
 import {Item} from "../components/layout";
 
+// TODO: move all data to graphql?
+
 /** One day in milliseconds. */
 const DAY = 24 * 60 * 60 * 1000;
 

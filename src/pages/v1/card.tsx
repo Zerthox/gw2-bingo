@@ -2,7 +2,7 @@ import React from "react";
 import {PageProps} from "gatsby";
 import Layout, {Paragraph} from "../../components/layout";
 import Bingo from "../../components/bingo";
-import {v1 as convert} from "../../convert";
+import convert from "../../convert/v1";
 import {fields} from "../../data";
 
 const App = ({location}: PageProps): JSX.Element => {
