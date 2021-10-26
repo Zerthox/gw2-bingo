@@ -23,6 +23,7 @@
     border: 2px solid hsla(0, 0%, 100%, .3);
     @include layout.card(3px);
     @include layout.transition;
+    cursor: pointer;
     &::after {
         content: "";
         width: 50%;

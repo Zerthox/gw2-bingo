@@ -1,14 +1,11 @@
-import React from "react";
+import React, {HTMLAttributes} from "react";
 import classNames from "classnames";
 import * as styles from "./grid.module.scss";
 
-export interface GridProps {
-    className?: string;
-    children?: React.ReactNode;
-}
+export type GridProps = HTMLAttributes<HTMLElement>;
 
-const Grid = ({className, children}: GridProps): JSX.Element => (
-    <div className={classNames(styles.grid, className)}>
+const Grid = ({className, children, ...props}: GridProps): JSX.Element => (
+    <div className={classNames(styles.grid, className)} {...props}>
         {children}
     </div>
 );
