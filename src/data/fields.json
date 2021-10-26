@@ -622,6 +622,10 @@
         {
             "fractal": "Deepstone",
             "event": "Completed left side floor trap"
+        },
+        {
+            "fractal": "All",
+            "event": "Healer died"
         }
     ]
 }
