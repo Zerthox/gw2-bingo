@@ -1,3 +1,8 @@
+# 2021-10-26
+- Added Fractal selection for bingo field pool
+- Added new bingo fields for Dailies
+- Changed some CM specific fields to all Fractals
+
 # 2021-07-06
 - Added new bingo fields:
 	- Power comp

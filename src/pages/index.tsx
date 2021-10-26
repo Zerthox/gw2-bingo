@@ -36,7 +36,7 @@ const toFields = (boxes: Box[]): Field[] => {
             case "100CM":
                 return hasSunquaCM;
             default:
-                return boxes.find(({name}) => name === fractal).checked;
+                return boxes.find(({name}) => name === fractal)?.checked;
         }
     });
 };

@@ -125,7 +125,7 @@
         {
             "fractal": "98CM",
             "encounter": "Bullet Hell",
-            "event": "Infinite Condis - No Cleanse/Resistance"
+            "event": "Infinite Condis - Lack of cleanse"
         },
         {
             "fractal": "98CM",
@@ -437,7 +437,11 @@
         },
         {
             "fractal": "Dailies",
-            "event": "Someone without Pots"
+            "event": "Someone forgot/without Pots"
+        },
+        {
+            "fractal": "Dailies",
+            "event": "Skip Day - Molten Furnace, Siren's Reef & Deepstone Daily"
         },
         {
             "fractal": "Uncategorized",
@@ -446,6 +450,178 @@
         {
             "fractal": "Uncategorized",
             "event": "Skipped JP after Old Tom"
+        },
+        {
+            "fractal": "Aquatic Ruins",
+            "event": "No or low level underwater gear"
+        },
+        {
+            "fractal": "Aquatic Ruins",
+            "event": "Rich kid - Ascended underwater gear"
+        },
+        {
+            "fractal": "Snowblind",
+            "event": "Choya skip to final boss cave"
+        },
+        {
+            "fractal": "Snowblind",
+            "event": "Cheesed Elemental with reflect"
+        },
+        {
+            "fractal": "All",
+            "event": "Trickjumped & avoided Flux Bomb"
+        },
+        {
+            "fractal": "Aetherblade",
+            "event": "Someone died to underwater mines"
+        },
+        {
+            "fractal": "Aetherblade",
+            "event": "Skip for floor tile traps"
+        },
+        {
+            "fractal": "Aetherblade",
+            "event": "Got Mistlock before cannon room"
+        },
+        {
+            "fractal": "Molten Boss",
+            "event": "Got Mistlock after Molten Effigy"
+        },
+        {
+            "fractal": "Molten Boss",
+            "event": "Skip to downstairs at the start"
+        },
+        {
+            "fractal": "Cliffside",
+            "event": "Caught in cage"
+        },
+        {
+            "fractal": "Cliffside",
+            "event": "Portal for arm seals"
+        },
+        {
+            "fractal": "Deepstone",
+            "event": "Fell down anywhere"
+        },
+        {
+            "fractal": "Solid Ocean",
+            "event": "Choya skip at start"
+        },
+        {
+            "fractal": "Solid Ocean",
+            "event": "Hit by Jade Maw beam"
+        },
+        {
+            "fractal": "Swampland",
+            "event": "Caught by trap"
+        },
+        {
+            "fractal": "Swampland",
+            "event": "Cheesed Wisps with portal"
+        },
+        {
+            "fractal": "Swampland",
+            "event": "Killed Champion Oakheart"
+        },
+        {
+            "fractal": "Thaumanova Reactor",
+            "event": "You solo heat room"
+        },
+        {
+            "fractal": "Thaumanova Reactor",
+            "event": "Someone dies in heat room"
+        },
+        {
+            "fractal": "Thaumanova Reactor",
+            "event": "Bursted Subject Six first try"
+        },
+        {
+            "fractal": "Thaumanova Reactor",
+            "event": "Wipe at Anomaly"
+        },
+        {
+            "fractal": "Thaumanova Reactor",
+            "event": "Killed Anomaly first try"
+        },
+        {
+            "fractal": "Twilight Oasis",
+            "event": "Portal to 2nd Sandbinder"
+        },
+        {
+            "fractal": "Twilight Oasis",
+            "event": "Turned into Moa"
+        },
+        {
+            "fractal": "Twilight Oasis",
+            "event": "Knocked by any attack at Amala"
+        },
+        {
+            "fractal": "Underground Facility",
+            "event": "Someone does cage skip"
+        },
+        {
+            "fractal": "Underground Facility",
+            "event": "Final Boss: Ice Elemental"
+        },
+        {
+            "fractal": "Underground Facility",
+            "event": "Final Boss: Dredge Suit"
+        },
+        {
+            "fractal": "Urban Battleground",
+            "event": "Died before gate opened"
+        },
+        {
+            "fractal": "Urban Battleground",
+            "event": "Everyone survived until gate opened"
+        },
+        {
+            "fractal": "Urban Battleground",
+            "event": "Skip to courtyard"
+        },
+        {
+            "fractal": "Volcanic",
+            "event": "Had to run from start to Grawl Shaman"
+        },
+        {
+            "fractal": "Volcanic",
+            "event": "Portal from start to Grawl Shaman"
+        },
+        {
+            "fractal": "Volcanic",
+            "event": "Skipped to Imbued Shaman (end boss)"
+        },
+        {
+            "fractal": "Chaos",
+            "event": "Failed Harpy JP"
+        },
+        {
+            "fractal": "Chaos",
+            "event": "Flux Bomb on group"
+        },
+        {
+            "fractal": "Chaos",
+            "event": "Dazed at Brazen Gladiator"
+        },
+        {
+            "fractal": "Chaos",
+            "event": "Lit at least 1 bonfire"
+        },
+        {
+            "fractal": "Siren's Reef",
+            "event": "Infinite Condis - Lack of cleanse"
+        },
+        {
+            "fractal": "Siren's Reef",
+            "event": "Any cannon shooter fails"
+        },
+        {
+            "fractal": "Deepstone",
+            "event": "No pull in elevator"
+        },
+        {
+            "fractal": "Deepstone",
+            "event": "Completed left side floor trap"
         }
     ]
 }
