@@ -80,7 +80,7 @@ const App = (): JSX.Element => {
                     </Checkbox>
                 ))}
             </Grid>
-            <Paragraph>This page allows you to generate a bingo card for your Fractal CM runs.</Paragraph>
+            <Paragraph>This page allows you to generate a bingo card for your Fractal runs.</Paragraph>
             <Paragraph>First time here? See <Link to="/how-to">How to play</Link>.</Paragraph>
             <Paragraph>
                 Currently we feature a total of {fields.all.length} different bingo fields!

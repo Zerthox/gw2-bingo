@@ -1,5 +1,5 @@
 # Guild Wars 2 Bingo
-Simple game of bingo for your Guild Wars 2 Fractal CM runs.
+Simple game of bingo for your Guild Wars 2 Fractal runs.
 
 Visit [zerthox.github.io/gw2-bingo/](https://zerthox.github.io/gw2-bingo/) to play.
 

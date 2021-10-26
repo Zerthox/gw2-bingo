@@ -6,7 +6,7 @@ const HowTo = (): JSX.Element => (
     <Layout title="How to play">
         <Paragraph>
             A bingo card has 9 fields ordered in 3 rows and 3 columns.
-            Each fields describes an event which may or may not happen during a Fractal CM run.
+            Each fields describes an event which may or may not happen during a Fractal run.
         </Paragraph>
         <Paragraph>
             After you have finished the run, mark the fields that apply.
