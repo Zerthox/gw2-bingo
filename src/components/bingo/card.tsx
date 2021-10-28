@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, forwardRef, ForwardedRef} from "react";
 import Tile, {TileProps} from "./tile";
 import * as styles from "./card.module.scss";
 
@@ -8,10 +8,10 @@ export interface CardProps {
     tiles: FieldProps[];
 }
 
-const Card = ({tiles}: CardProps): JSX.Element => {
+const Card = ({tiles}: CardProps, ref: ForwardedRef<HTMLDivElement>): JSX.Element => {
     const [active, setActive] = useState(Array<boolean>(9).fill(false));
     return (
-        <div className={styles.card}>
+        <div ref={ref} className={styles.card}>
             {tiles.map((props, i) => (
                 <Tile
                     key={i}
@@ -28,4 +28,4 @@ const Card = ({tiles}: CardProps): JSX.Element => {
     );
 };
 
-export default Card;
+export default forwardRef(Card);
