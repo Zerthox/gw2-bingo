@@ -3,6 +3,7 @@ import {useStaticQuery, graphql} from "gatsby";
 import SEO from "./seo";
 import {LinkButton} from "./button";
 import * as styles from "./layout.module.scss";
+import * as spacing from "./spacing.module.scss";
 
 export interface LayoutProps {
     children: React.ReactNode;
@@ -45,7 +46,7 @@ const Layout = ({title = "", isHome = false, children}: LayoutProps): JSX.Elemen
                     <div className={styles.header}>{title || site.siteMetadata.title}</div>
                     <div className={styles.content}>
                         {children}
-                        {!isHome ? <LinkButton to="/" style={{marginTop: 20}}>Back to home</LinkButton> : null}
+                        {!isHome ? <LinkButton to="/" className={spacing.top20}>Back to home</LinkButton> : null}
                     </div>
                 </div>
             </div>
