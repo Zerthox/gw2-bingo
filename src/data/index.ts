@@ -21,9 +21,9 @@ const toFractal = (id: number): Fractal => fractalData.fractals[id];
 
 /** Collection of fractal data. */
 const fractals = {
-    all: fractalData.fractals,
-    cm: [16, 17, 21].map(toFractal),
-    dailies: fractalData.dailies.map((fractals) => fractals.map(toFractal))
+    all: fractalData.fractals as Fractal[],
+    cm: [16, 17, 21].map(toFractal) as Fractal[],
+    dailies: fractalData.dailies.map((fractals) => fractals.map(toFractal)) as Fractal[][]
 };
 
 /** Todays fractal dailies */
@@ -37,8 +37,8 @@ export interface Field {
 
 /** Collection of field data. */
 const fields = {
-    all: fieldData.fields,
-    cm: fieldData.fields.filter(({fractal}) => fractal.endsWith("CM"))
+    all: fieldData.fields as Field[],
+    cm: fieldData.fields.filter(({fractal}) => fractal.endsWith("CM")) as Field[]
 };
 
 
@@ -56,7 +56,7 @@ const random = (whitelist: Field[] = fields.all): number[] => {
         const result: number[] = [];
         while (result.length < 9) {
             const generated = whitelist[Math.floor(Math.random() * whitelist.length)];
-            const id = fields.all.findIndex((field) => field === generated);
+            const id = fields.all.indexOf(generated);
             if (!result.includes(id)) {
                 result.push(id);
             }
