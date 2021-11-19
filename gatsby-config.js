@@ -6,6 +6,13 @@ module.exports = {
     },
     pathPrefix: "/gw2-bingo",
     plugins: [
+        {
+            resolve: "gatsby-plugin-manifest",
+            options: {
+                name: "GW2 Fractal Bingo",
+                icon: "src/assets/encryption.png"
+            }
+        },
         "gatsby-plugin-react-helmet",
         "gatsby-plugin-offline",
         {
