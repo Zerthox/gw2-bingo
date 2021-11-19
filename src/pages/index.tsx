@@ -1,5 +1,6 @@
 import React, {useState} from "react";
-import Layout, {Link, Paragraph, Checkbox, Grid, LinkButton, spacing} from "../components/layout";
+import Layout, {Grid, spacing} from "../components/layout";
+import {Link, Paragraph, Checkbox, LinkButton} from "../components/elements";
 import {v1 as convert} from "../convert";
 import {fractals, dailiesToday, fields, random, Field} from "../data";
 

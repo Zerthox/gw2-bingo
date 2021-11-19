@@ -1,5 +1,6 @@
 import React from "react";
-import Layout, {Paragraph} from "../components/layout";
+import Layout from "../components/layout";
+import {Paragraph} from "../components/elements";
 
 const NotFound = (): JSX.Element => (
     <Layout title="404 Not Found">

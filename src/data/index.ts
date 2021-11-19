@@ -1,6 +1,6 @@
 import fractalData from "./fractals.json";
 import fieldData from "./fields.json";
-import {Item} from "../components/layout";
+import {Item} from "../components/elements";
 
 // TODO: move all data to graphql?
 
@@ -40,7 +40,6 @@ const fields = {
     all: fieldData.fields as Field[],
     cm: fieldData.fields.filter(({fractal}) => fractal.endsWith("CM")) as Field[]
 };
-
 
 /** Converts field data to an item. */
 const toItem = ({fractal, encounter, event}: Field): Item => ({

@@ -1,5 +1,6 @@
 import React from "react";
-import Layout, {Paragraph, List} from "../components/layout";
+import Layout from "../components/layout";
+import {Paragraph, List} from "../components/elements";
 import {fields, toItem, Field} from "../data";
 
 const cms = [

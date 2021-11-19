@@ -1,7 +1,7 @@
 import React from "react";
 import {useStaticQuery, graphql} from "gatsby";
 import SEO from "./seo";
-import {LinkButton} from "./button";
+import {LinkButton} from "../elements/button";
 import * as styles from "./layout.module.scss";
 import * as spacing from "./spacing.module.scss";
 
