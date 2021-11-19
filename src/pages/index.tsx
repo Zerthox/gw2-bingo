@@ -13,8 +13,8 @@ interface Box {
 const toFields = (boxes: Box[]): Field[] => {
     const hasDailies = boxes.findIndex(({name, checked}) => checked && !name.endsWith("CM")) !== -1;
     const hasNightmareCM = boxes.find(({name}) => name === "Nightmare CM").checked;
-    const hasShatteredCM = boxes.find(({name}) => name === "Shattered Observatory CM").checked;
-    const hasSunquaCM = boxes.find(({name}) => name === "Sunqua Peak CM").checked;
+    const hasShatteredCM = boxes.find(({name}) => name === "Shattered CM").checked;
+    const hasSunquaCM = boxes.find(({name}) => name === "Sunqua CM").checked;
     const hasOldCM = hasNightmareCM || hasShatteredCM;
     const hasCM = hasOldCM || hasSunquaCM;
 
@@ -24,16 +24,10 @@ const toFields = (boxes: Box[]): Field[] => {
                 return true;
             case "Dailies":
                 return hasDailies;
-            case "98-100CM":
+            case "All CM":
                 return hasCM;
-            case "98-99CM":
+            case "Old CM":
                 return hasOldCM;
-            case "98CM":
-                return hasNightmareCM;
-            case "99CM":
-                return hasShatteredCM;
-            case "100CM":
-                return hasSunquaCM;
             default:
                 return boxes.find(({name}) => name === fractal)?.checked;
         }
@@ -47,8 +41,8 @@ const App = (): JSX.Element => {
             checked: dailiesToday().includes(fractal)
         })),
         {name: "Nightmare CM", checked: true},
-        {name: "Shattered Observatory CM", checked: true},
-        {name: "Sunqua Peak CM", checked: true}
+        {name: "Shattered CM", checked: true},
+        {name: "Sunqua CM", checked: true}
     ]);
 
     const genRand = () => convert.encode(random(toFields(boxes)));

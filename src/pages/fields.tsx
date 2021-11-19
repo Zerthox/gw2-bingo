@@ -2,6 +2,14 @@ import React from "react";
 import Layout, {Paragraph, List} from "../components/layout";
 import {fields, toItem, Field} from "../data";
 
+const cms = [
+    "All CM",
+    "Old CM",
+    "Nightmare CM",
+    "Shattered CM",
+    "Sunqua CM"
+];
+
 const encounters = [
     "MAMA",
     "Bullet Hell",
@@ -23,8 +31,8 @@ const scale = (fractal: string) => {
         // dailies after
         return -1;
     } else if (fractal.endsWith("CM")) {
-        // parse scale for cm
-        return parseInt(fractal);
+        // cms at end
+        return 2 + cms.indexOf(fractal);
     } else {
         // normal for regular
         return 0;
@@ -39,18 +47,21 @@ const compare = (a: Field, b: Field) => {
     const encounterA = a.encounter ? encounters.indexOf(a.encounter) : -2;
     const encounterB = b.encounter ? encounters.indexOf(b.encounter) : -2;
 
-    // sort by scale, then encounter, then alphabetically
+    // sort by scale
     if (scaleA < scaleB) {
         return -1;
     } else if (scaleA > scaleB) {
         return 1;
-    } else if (encounterA < encounterB) {
-        return -1;
-    } else if (encounterA > encounterB) {
-        return 1;
-    } else {
-        return a.fractal.localeCompare(b.fractal);
+    } else if (a.fractal.endsWith("CM")) {
+        // sort cms by encounter
+        if (encounterA < encounterB) {
+            return -1;
+        } else if (encounterA > encounterB) {
+            return 1;
+        }
     }
+
+    return a.fractal.localeCompare(b.fractal);
 };
 
 const Fields = (): JSX.Element => (

@@ -44,7 +44,7 @@ const fields = {
 
 /** Converts field data to an item. */
 const toItem = ({fractal, encounter, event}: Field): Item => ({
-    title: encounter ? `${fractal} ${encounter}` : fractal,
+    title: encounter ? `${fractal} - ${encounter}` : fractal,
     content: event
 });
 

@@ -1,3 +1,7 @@
+# 2021-11-20
+- Adjust CM names
+- Adjust some bingo fields
+
 # 2021-10-26
 - Added Fractal selection for bingo field pool
 - Added new bingo fields for Dailies
