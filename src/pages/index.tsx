@@ -11,13 +11,17 @@ interface Box {
     checked: boolean;
 }
 
+const isChecked = (boxes: Box[], fractal: string) => boxes.find(({name}) => name === fractal)?.checked;
+
 const toFields = (boxes: Box[]): Field[] => {
-    const hasDailies = boxes.findIndex(({name, checked}) => checked && !name.endsWith("CM")) !== -1;
-    const hasNightmareCM = boxes.find(({name}) => name === "Nightmare CM").checked;
-    const hasShatteredCM = boxes.find(({name}) => name === "Shattered CM").checked;
-    const hasSunquaCM = boxes.find(({name}) => name === "Sunqua CM").checked;
-    const hasOldCM = hasNightmareCM || hasShatteredCM;
-    const hasCM = hasOldCM || hasSunquaCM;
+    const hasNightmareCM = isChecked(boxes, "Nightmare CM");
+    const hasShatteredCM = isChecked(boxes, "Shattered CM");
+    const hasSunquaCM = isChecked(boxes, "Sunqua CM");
+
+    const hasDailies = boxes.some(({name, checked}) => checked && !name.endsWith("CM"));
+    const hasNightmare = hasNightmareCM || isChecked(boxes, "Nightmare");
+    const hasShattered = hasShatteredCM || isChecked(boxes, "Shattered Observatory");
+    const hasSunqua = hasSunquaCM || isChecked(boxes, "Sunqua Peak");
 
     return fields.all.filter(({fractal}) => {
         switch (fractal) {
@@ -26,11 +30,17 @@ const toFields = (boxes: Box[]): Field[] => {
             case "Dailies":
                 return hasDailies;
             case "All CM":
-                return hasCM;
+                return hasNightmareCM || hasShatteredCM || hasSunquaCM;
             case "Old CM":
-                return hasOldCM;
+                return hasNightmareCM || hasShatteredCM;
+            case "Nightmare":
+                return hasNightmare;
+            case "Shattered Observatory":
+                return hasShattered;
+            case "Sunqua Peak":
+                return hasSunqua;
             default:
-                return boxes.find(({name}) => name === fractal)?.checked;
+                return isChecked(boxes, fractal);
         }
     });
 };
