@@ -1,5 +1,6 @@
 # 2021-11-24
 - Add & adjust some bingo fields
+- Exclude Sunqua normal fields from CM
 
 # 2021-11-20
 - Adjust CM names

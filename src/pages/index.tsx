@@ -14,14 +14,15 @@ interface Box {
 const isChecked = (boxes: Box[], fractal: string) => boxes.find(({name}) => name === fractal)?.checked;
 
 const toFields = (boxes: Box[]): Field[] => {
+    const hasDailies = boxes.some(({name, checked}) => checked && !name.endsWith("CM"));
+
     const hasNightmareCM = isChecked(boxes, "Nightmare CM");
     const hasShatteredCM = isChecked(boxes, "Shattered CM");
     const hasSunquaCM = isChecked(boxes, "Sunqua CM");
 
-    const hasDailies = boxes.some(({name, checked}) => checked && !name.endsWith("CM"));
+    // include normal mode fields for nightmare & shattered cm
     const hasNightmare = hasNightmareCM || isChecked(boxes, "Nightmare");
     const hasShattered = hasShatteredCM || isChecked(boxes, "Shattered Observatory");
-    const hasSunqua = hasSunquaCM || isChecked(boxes, "Sunqua Peak");
 
     return fields.all.filter(({fractal}) => {
         switch (fractal) {
@@ -37,8 +38,6 @@ const toFields = (boxes: Box[]): Field[] => {
                 return hasNightmare;
             case "Shattered Observatory":
                 return hasShattered;
-            case "Sunqua Peak":
-                return hasSunqua;
             default:
                 return isChecked(boxes, fractal);
         }
