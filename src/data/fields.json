@@ -508,7 +508,7 @@
         },
         {
             "fractal": "Swampland",
-            "event": "Caught by trap"
+            "event": "God damnit - Caught in trap"
         },
         {
             "fractal": "Swampland",
@@ -620,7 +620,7 @@
         },
         {
             "fractal": "All",
-            "event": "Healer died"
+            "event": "Healer downed during fight"
         },
         {
             "fractal": "All",
@@ -630,6 +630,50 @@
             "fractal": "Nightmare",
             "encounter": "Bullet Hell",
             "event": "Hit Fleshgorge (shark)"
+        },
+        {
+            "fractal": "All",
+            "event": "Pulling a german - Someone types 7gg"
+        },
+        {
+            "fractal": "Captain Mai Trin Boss",
+            "event": "Someone dies during kill attempt"
+        },
+        {
+            "fractal": "Captain Mai Trin Boss",
+            "event": "No amateurs allowed - First try kill"
+        },
+        {
+            "fractal": "Captain Mai Trin Boss",
+            "event": "Mai Trin's shadowstep fails"
+        },
+        {
+            "fractal": "Captain Mai Trin Boss",
+            "event": "Mai Trin's shadowstep fails"
+        },
+        {
+            "fractal": "Cliffside",
+            "event": "Oops - Fell down or caught in trap"
+        },
+        {
+            "fractal": "Molten Furnace",
+            "event": "Knocked at final encounter"
+        },
+        {
+            "fractal": "Molten Furnace",
+            "event": "Material Storage Gamer - Mined Mithril"
+        },
+        {
+            "fractal": "Sunqua Peak",
+            "event": "Completed JP to Air Elemental"
+        },
+        {
+            "fractal": "Sunqua Peak",
+            "event": "Talked to any Frightened Water Elemental"
+        },
+        {
+            "fractal": "Sunqua Peak",
+            "event": "\"Tamed\" any of the Elementals"
         }
     ]
 }

@@ -1,3 +1,6 @@
+# 2021-11-24
+- Add & adjust some bingo fields
+
 # 2021-11-20
 - Adjust CM names
 - Adjust some bingo fields
