@@ -6,6 +6,13 @@ module.exports = {
     },
     pathPrefix: "/gw2-bingo",
     plugins: [
+        "gatsby-transformer-json",
+        {
+            resolve: "gatsby-source-filesystem",
+            options: {
+                path: `${__dirname}/src/data`
+            }
+        },
         {
             resolve: "gatsby-plugin-manifest",
             options: {

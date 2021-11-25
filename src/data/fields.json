@@ -1,679 +1,677 @@
-{
-    "fields": [
-        {
-            "fractal": "All",
-            "event": "You saw nothing! - Downed & got back up"
-        },
-        {
-            "fractal": "All CM",
-            "event": "Invincible - No downs"
-        },
-        {
-            "fractal": "All CM",
-            "event": "No amateurs - Everything first try"
-        },
-        {
-            "fractal": "All",
-            "event": "Cleared but had several fails"
-        },
-        {
-            "fractal": "All",
-            "event": "Who are these people? - Had to PUG"
-        },
-        {
-            "fractal": "All",
-            "event": "Kaffeklatsch - Run with Guild/friends"
-        },
-        {
-            "fractal": "All",
-            "event": "You carried group CC"
-        },
-        {
-            "fractal": "All",
-            "event": "Someone solos last % of a boss"
-        },
-        {
-            "fractal": "All",
-            "event": "Got carried - Died & group cleared"
-        },
-        {
-            "fractal": "All CM",
-            "event": "You carried group DPS or played Support"
-        },
-        {
-            "fractal": "All CM",
-            "event": "DPS loses to BS/Support"
-        },
-        {
-            "fractal": "All CM",
-            "event": "Survivor - Nothing killed you (except /gg)"
-        },
-        {
-            "fractal": "All CM",
-            "event": "Meta is a lie! - Non-meta group composition"
-        },
-        {
-            "fractal": "All",
-            "event": "God abandoned us - No Fractal Gods"
-        },
-        {
-            "fractal": "All",
-            "event": "Blessed - 2 or more Fractal Gods"
-        },
-        {
-            "fractal": "All CM",
-            "event": "No Pain No Fun - Bad instabs for 2 or more CM"
-        },
-        {
-            "fractal": "All CM",
-            "event": "Lucky! - Dropped 7 or more Mystic Coins"
-        },
-        {
-            "fractal": "All CM",
-            "event": "No Luck - 0 Mystic Coin drops"
-        },
-        {
-            "fractal": "All CM",
-            "event": "Spirit/Minion died (unintentionally)"
-        },
-        {
-            "fractal": "All",
-            "event": "Technical difficulties: Someone had disconnect/crash"
-        },
-        {
-            "fractal": "All CM",
-            "event": "Diversity - Swapped class or build"
-        },
-        {
-            "fractal": "All CM",
-            "event": "Keep it simple - Played same class everywhere"
-        },
-        {
-            "fractal": "All CM",
-            "event": "Min-maxing - Used Slaying Potion/Sigils"
-        },
-        {
-            "fractal": "Nightmare CM",
-            "encounter": "MAMA",
-            "event": "Smooth kill"
-        },
-        {
-            "fractal": "Nightmare CM",
-            "encounter": "MAMA",
-            "event": "You got knocked"
-        },
-        {
-            "fractal": "Nightmare CM",
-            "encounter": "MAMA",
-            "event": "Spawned 2 poison fields"
-        },
-        {
-            "fractal": "Nightmare CM",
-            "encounter": "MAMA",
-            "event": "We are speed! Phased before first bubble"
-        },
-        {
-            "fractal": "Nightmare CM",
-            "encounter": "MAMA",
-            "event": "Renegade not highest CC"
-        },
-        {
-            "fractal": "Nightmare",
-            "encounter": "Bullet Hell",
-            "event": "Full wipe at pre"
-        },
-        {
-            "fractal": "Nightmare CM",
-            "encounter": "Bullet Hell",
-            "event": "Infinite Condis - Lack of cleanse"
-        },
-        {
-            "fractal": "Nightmare CM",
-            "encounter": "Bullet Hell",
-            "event": "Leecher - Someone went AFK during pre"
-        },
-        {
-            "fractal": "Nightmare CM",
-            "encounter": "Bullet Hell",
-            "event": "PvP Roleplay - You capped a circle"
-        },
-        {
-            "fractal": "Nightmare",
-            "encounter": "Bullet Hell",
-            "event": "Someone skipped with Choya Tonic"
-        },
-        {
-            "fractal": "Nightmare",
-            "encounter": "Bullet Hell",
-            "event": "No Choya skip"
-        },
-        {
-            "fractal": "Nightmare CM",
-            "encounter": "Siax",
-            "event": "Smooth kill"
-        },
-        {
-            "fractal": "Nightmare CM",
-            "encounter": "Siax",
-            "event": "Mid spit"
-        },
-        {
-            "fractal": "Nightmare CM",
-            "encounter": "Siax",
-            "event": "No Aegis!? Got hit & spawned Hallucination"
-        },
-        {
-            "fractal": "Nightmare CM",
-            "encounter": "Ensolyss",
-            "event": "Smooth kill"
-        },
-        {
-            "fractal": "Nightmare CM",
-            "encounter": "Ensolyss",
-            "event": "Pro CC - Successful instabreak"
-        },
-        {
-            "fractal": "Nightmare CM",
-            "encounter": "Ensolyss",
-            "event": "Attempted & failed instabreak"
-        },
-        {
-            "fractal": "Nightmare CM",
-            "encounter": "Ensolyss",
-            "event": "No instabreak attempts"
-        },
-        {
-            "fractal": "Nightmare CM",
-            "encounter": "Ensolyss",
-            "event": "No teleport to mid after dash"
-        },
-        {
-            "fractal": "Shattered CM",
-            "event": "LNHB success (intentional /gg not counted)"
-        },
-        {
-            "fractal": "Shattered CM",
-            "encounter": "Skorvald",
-            "event": "Smooth kill"
-        },
-        {
-            "fractal": "Shattered CM",
-            "encounter": "Skorvald",
-            "event": "Smooth Stability support"
-        },
-        {
-            "fractal": "Shattered CM",
-            "encounter": "Skorvald",
-            "event": "Taxi - 66% & 33% portals used"
-        },
-        {
-            "fractal": "Shattered CM",
-            "encounter": "Skorvald",
-            "event": "We do cardio! - No portals used"
-        },
-        {
-            "fractal": "Shattered CM",
-            "encounter": "Skorvald",
-            "event": "You got knocked off"
-        },
-        {
-            "fractal": "Shattered CM",
-            "encounter": "Skorvald",
-            "event": "DPS over 9000 - Hit 33% before dashes complete"
-        },
-        {
-            "fractal": "Shattered CM",
-            "encounter": "Artsariiv",
-            "event": "Marble Masters - Smooth kill"
-        },
-        {
-            "fractal": "Shattered CM",
-            "encounter": "Artsariiv",
-            "event": "DPS reflected successfully"
-        },
-        {
-            "fractal": "Shattered CM",
-            "encounter": "Artsariiv",
-            "event": "You backup marble"
-        },
-        {
-            "fractal": "Shattered CM",
-            "encounter": "Artsariiv",
-            "event": "Marble fail"
-        },
-        {
-            "fractal": "Shattered CM",
-            "encounter": "Artsariiv",
-            "event": "No Aegis/Stability in middle"
-        },
-        {
-            "fractal": "Shattered CM",
-            "encounter": "Artsariiv",
-            "event": "Always Aegis/Stability in middle"
-        },
-        {
-            "fractal": "Shattered CM",
-            "encounter": "Artsariiv",
-            "event": "Highest CC"
-        },
-        {
-            "fractal": "Shattered CM",
-            "encounter": "Artsariiv",
-            "event": "Got 2 or 3 skulls"
-        },
-        {
-            "fractal": "Shattered CM",
-            "encounter": "Arkk",
-            "event": "Smooth kill"
-        },
-        {
-            "fractal": "Shattered Observatory",
-            "encounter": "Arkk",
-            "event": "Why are you running? - You got feared"
-        },
-        {
-            "fractal": "Shattered CM",
-            "event": "Skydiver - Fell from any boss platform"
-        },
-        {
-            "fractal": "Shattered CM",
-            "encounter": "Arkk",
-            "event": "Someone got hit by orb"
-        },
-        {
-            "fractal": "Shattered CM",
-            "encounter": "Arkk",
-            "event": "SAK OP - No orb fails"
-        },
-        {
-            "fractal": "Shattered Observatory",
-            "encounter": "Arkk",
-            "event": "Skull fail"
-        },
-        {
-            "fractal": "Shattered CM",
-            "encounter": "Arkk",
-            "event": "Renegade dominated in CC"
-        },
-        {
-            "fractal": "Old CM",
-            "event": "Old but gold - Power DPS in old CM"
-        },
-        {
-            "fractal": "Old CM",
-            "event": "New meta - Condi DPS in old CM"
-        },
-        {
-            "fractal": "Sunqua CM",
-            "event": "DwD success (intentional /gg not counted)"
-        },
-        {
-            "fractal": "Sunqua CM",
-            "encounter": "Ai",
-            "event": "Smooth kill"
-        },
-        {
-            "fractal": "Sunqua CM",
-            "encounter": "Ai",
-            "event": "Death by Beyblade - Hit by spin"
-        },
-        {
-            "fractal": "Sunqua CM",
-            "encounter": "Elemental Ai",
-            "event": "Forgotten mechanics: Reached clouds"
-        },
-        {
-            "fractal": "Sunqua CM",
-            "encounter": "Elemental Ai",
-            "event": "Someone ran out from/with water green"
-        },
-        {
-            "fractal": "Sunqua CM",
-            "encounter": "Elemental Ai",
-            "event": "Staying dry - Killed before water tornado"
-        },
-        {
-            "fractal": "Sunqua CM",
-            "encounter": "Dark Ai",
-            "event": "Failed a Sorrow"
-        },
-        {
-            "fractal": "Sunqua CM",
-            "encounter": "Ai",
-            "event": "Smooth CC"
-        },
-        {
-            "fractal": "All CM",
-            "event": "Pro Strats - Ran no heal on any boss"
-        },
-        {
-            "fractal": "All",
-            "event": "Impostor - You sabotaged someone else"
-        },
-        {
-            "fractal": "All",
-            "event": "Crewmate - Got sabotaged by someone"
-        },
-        {
-            "fractal": "All",
-            "event": "Weaver Roleplay - You downed a lot"
-        },
-        {
-            "fractal": "Nightmare CM",
-            "encounter": "Siax",
-            "event": "Disoriented - Someone went to wrong add"
-        },
-        {
-            "fractal": "Nightmare CM",
-            "encounter": "Siax",
-            "event": "No Aegis/Stability fails"
-        },
-        {
-            "fractal": "Nightmare CM",
-            "encounter": "Siax",
-            "event": "Broke 2nd breakbar below 33%"
-        },
-        {
-            "fractal": "Nightmare CM",
-            "encounter": "Ensolyss",
-            "event": "Air Ensolyss - Knocked away"
-        },
-        {
-            "fractal": "Nightmare CM",
-            "encounter": "MAMA",
-            "event": "Someone went wrong direction at 25%"
-        },
-        {
-            "fractal": "Shattered CM",
-            "encounter": "Artsariiv",
-            "event": "Failed/stolen reflect"
-        },
-        {
-            "fractal": "Shattered CM",
-            "encounter": "Arkk",
-            "event": "No bubble - Failed Anomaly"
-        },
-        {
-            "fractal": "All",
-            "event": "Wait! - Someone on wrong traits/gear"
-        },
-        {
-            "fractal": "Sunqua CM",
-            "encounter": "Dark Ai",
-            "event": "Necro OP - Epi strat for Sorrows"
-        },
-        {
-            "fractal": "Sunqua CM",
-            "encounter": "Ai",
-            "event": "Players stacked & survived during circles"
-        },
-        {
-            "fractal": "All",
-            "event": "Deserter - Someone left mid run"
-        },
-        {
-            "fractal": "All CM",
-            "event": "Healing the boss - Someone with low DPS"
-        },
-        {
-            "fractal": "Sunqua CM",
-            "encounter": "Dark Ai",
-            "event": "Slowpoke - Fear got someone"
-        },
-        {
-            "fractal": "Sunqua CM",
-            "encounter": "Dark Ai",
-            "event": "Light-footed - No Fear fails"
-        },
-        {
-            "fractal": "Sunqua CM",
-            "encounter": "Ai",
-            "event": "To Narnia: Boss dashed to middle of nowhere"
-        },
-        {
-            "fractal": "Dailies",
-            "event": "Someone forgot/without Pots"
-        },
-        {
-            "fractal": "Dailies",
-            "event": "Skip Day - Molten Furnace, Siren's Reef & Deepstone Daily"
-        },
-        {
-            "fractal": "Uncategorized",
-            "event": "Someone fails JP at start"
-        },
-        {
-            "fractal": "Uncategorized",
-            "event": "Skipped JP after Old Tom"
-        },
-        {
-            "fractal": "Aquatic Ruins",
-            "event": "No or low level underwater gear"
-        },
-        {
-            "fractal": "Aquatic Ruins",
-            "event": "Rich kid - Ascended underwater gear"
-        },
-        {
-            "fractal": "Snowblind",
-            "event": "Choya skip to final boss cave"
-        },
-        {
-            "fractal": "Snowblind",
-            "event": "Cheesed Elemental with reflect"
-        },
-        {
-            "fractal": "All",
-            "event": "Trickjumped & avoided Flux Bomb"
-        },
-        {
-            "fractal": "Aetherblade",
-            "event": "Someone died to underwater mines"
-        },
-        {
-            "fractal": "Aetherblade",
-            "event": "Skip for floor tile traps"
-        },
-        {
-            "fractal": "Aetherblade",
-            "event": "Got Mistlock before cannon room"
-        },
-        {
-            "fractal": "Molten Boss",
-            "event": "Got Mistlock after Molten Effigy"
-        },
-        {
-            "fractal": "Molten Boss",
-            "event": "Skip to downstairs at the start"
-        },
-        {
-            "fractal": "Cliffside",
-            "event": "Caught in cage"
-        },
-        {
-            "fractal": "Cliffside",
-            "event": "Portal for arm seals"
-        },
-        {
-            "fractal": "Deepstone",
-            "event": "Fell down anywhere"
-        },
-        {
-            "fractal": "Solid Ocean",
-            "event": "Choya skip at start"
-        },
-        {
-            "fractal": "Solid Ocean",
-            "event": "Hit by Jade Maw beam"
-        },
-        {
-            "fractal": "Swampland",
-            "event": "God damnit - Caught in trap"
-        },
-        {
-            "fractal": "Swampland",
-            "event": "Cheesed Wisps with portal"
-        },
-        {
-            "fractal": "Swampland",
-            "event": "Group killed Champion Oakheart"
-        },
-        {
-            "fractal": "Thaumanova Reactor",
-            "event": "You solo heat room"
-        },
-        {
-            "fractal": "Thaumanova Reactor",
-            "event": "Someone dies in heat room"
-        },
-        {
-            "fractal": "Thaumanova Reactor",
-            "event": "Bursted Subject Six first try"
-        },
-        {
-            "fractal": "Thaumanova Reactor",
-            "event": "Wipe at Anomaly"
-        },
-        {
-            "fractal": "Thaumanova Reactor",
-            "event": "Killed Anomaly first try"
-        },
-        {
-            "fractal": "Twilight Oasis",
-            "event": "Portal to 2nd Sandbinder"
-        },
-        {
-            "fractal": "Twilight Oasis",
-            "event": "Turned into Moa"
-        },
-        {
-            "fractal": "Twilight Oasis",
-            "event": "Knocked by any attack at Amala"
-        },
-        {
-            "fractal": "Underground Facility",
-            "event": "Someone does cage skip"
-        },
-        {
-            "fractal": "Underground Facility",
-            "event": "Final Boss: Ice Elemental"
-        },
-        {
-            "fractal": "Underground Facility",
-            "event": "Final Boss: Dredge Suit"
-        },
-        {
-            "fractal": "Urban Battleground",
-            "event": "Someone dies before gate opened"
-        },
-        {
-            "fractal": "Urban Battleground",
-            "event": "Everyone survived until gate opened"
-        },
-        {
-            "fractal": "Urban Battleground",
-            "event": "JP skip from gate to courtyard"
-        },
-        {
-            "fractal": "Volcanic",
-            "event": "Had to run from start to Grawl Shaman"
-        },
-        {
-            "fractal": "Volcanic",
-            "event": "Portal from start to Grawl Shaman"
-        },
-        {
-            "fractal": "Volcanic",
-            "event": "Skipped through lava to Imbued Shaman (end boss)"
-        },
-        {
-            "fractal": "Chaos",
-            "event": "Failed Harpy JP"
-        },
-        {
-            "fractal": "Chaos",
-            "event": "Flux Bomb on group"
-        },
-        {
-            "fractal": "Chaos",
-            "event": "Dazed at Brazen Gladiator"
-        },
-        {
-            "fractal": "Chaos",
-            "event": "Lit at least 1 bonfire"
-        },
-        {
-            "fractal": "Siren's Reef",
-            "event": "Infinite Condis - Lack of cleanse"
-        },
-        {
-            "fractal": "Siren's Reef",
-            "event": "Any cannon shooter fails"
-        },
-        {
-            "fractal": "Deepstone",
-            "event": "No/failed pull in elevator"
-        },
-        {
-            "fractal": "Deepstone",
-            "event": "Completed left side floor trap"
-        },
-        {
-            "fractal": "All",
-            "event": "Healer downed during fight"
-        },
-        {
-            "fractal": "All",
-            "event": "Bonus Memes - Ran Recs as well"
-        },
-        {
-            "fractal": "Nightmare",
-            "encounter": "Bullet Hell",
-            "event": "Hit Fleshgorge (shark)"
-        },
-        {
-            "fractal": "All",
-            "event": "Pulling a german - Someone types 7gg"
-        },
-        {
-            "fractal": "Captain Mai Trin Boss",
-            "event": "Someone dies during kill attempt"
-        },
-        {
-            "fractal": "Captain Mai Trin Boss",
-            "event": "No amateurs allowed - First try kill"
-        },
-        {
-            "fractal": "Captain Mai Trin Boss",
-            "event": "Mai Trin's shadowstep fails"
-        },
-        {
-            "fractal": "Captain Mai Trin Boss",
-            "event": "Mai Trin's shadowstep fails"
-        },
-        {
-            "fractal": "Cliffside",
-            "event": "Oops - Fell down or caught in trap"
-        },
-        {
-            "fractal": "Molten Furnace",
-            "event": "Knocked at final encounter"
-        },
-        {
-            "fractal": "Molten Furnace",
-            "event": "Material Storage Gamer - Mined Mithril"
-        },
-        {
-            "fractal": "Sunqua Peak",
-            "event": "Completed JP to Air Elemental"
-        },
-        {
-            "fractal": "Sunqua Peak",
-            "event": "Talked to any Frightened Water Elemental"
-        },
-        {
-            "fractal": "Sunqua Peak",
-            "event": "\"Tamed\" any of the Elementals"
-        }
-    ]
-}
+[
+    {
+        "fractal": "All",
+        "event": "You saw nothing! - Downed & got back up"
+    },
+    {
+        "fractal": "All CM",
+        "event": "Invincible - No downs"
+    },
+    {
+        "fractal": "All CM",
+        "event": "No amateurs - Everything first try"
+    },
+    {
+        "fractal": "All",
+        "event": "Cleared but had several fails"
+    },
+    {
+        "fractal": "All",
+        "event": "Who are these people? - Had to PUG"
+    },
+    {
+        "fractal": "All",
+        "event": "Kaffeklatsch - Run with Guild/friends"
+    },
+    {
+        "fractal": "All",
+        "event": "You carried group CC"
+    },
+    {
+        "fractal": "All",
+        "event": "Someone solos last % of a boss"
+    },
+    {
+        "fractal": "All",
+        "event": "Got carried - Died & group cleared"
+    },
+    {
+        "fractal": "All CM",
+        "event": "You carried group DPS or played Support"
+    },
+    {
+        "fractal": "All CM",
+        "event": "DPS loses to BS/Support"
+    },
+    {
+        "fractal": "All CM",
+        "event": "Survivor - Nothing killed you (except /gg)"
+    },
+    {
+        "fractal": "All CM",
+        "event": "Meta is a lie! - Non-meta group composition"
+    },
+    {
+        "fractal": "All",
+        "event": "God abandoned us - No Fractal Gods"
+    },
+    {
+        "fractal": "All",
+        "event": "Blessed - 2 or more Fractal Gods"
+    },
+    {
+        "fractal": "All CM",
+        "event": "No Pain No Fun - Bad instabs for 2 or more CM"
+    },
+    {
+        "fractal": "All CM",
+        "event": "Lucky! - Dropped 7 or more Mystic Coins"
+    },
+    {
+        "fractal": "All CM",
+        "event": "No Luck - 0 Mystic Coin drops"
+    },
+    {
+        "fractal": "All CM",
+        "event": "Spirit/Minion died (unintentionally)"
+    },
+    {
+        "fractal": "All",
+        "event": "Technical difficulties: Someone had disconnect/crash"
+    },
+    {
+        "fractal": "All CM",
+        "event": "Diversity - Swapped class or build"
+    },
+    {
+        "fractal": "All CM",
+        "event": "Keep it simple - Played same class everywhere"
+    },
+    {
+        "fractal": "All CM",
+        "event": "Min-maxing - Used Slaying Potion/Sigils"
+    },
+    {
+        "fractal": "Nightmare CM",
+        "encounter": "MAMA",
+        "event": "Smooth kill"
+    },
+    {
+        "fractal": "Nightmare CM",
+        "encounter": "MAMA",
+        "event": "You got knocked"
+    },
+    {
+        "fractal": "Nightmare CM",
+        "encounter": "MAMA",
+        "event": "Spawned 2 poison fields"
+    },
+    {
+        "fractal": "Nightmare CM",
+        "encounter": "MAMA",
+        "event": "We are speed! Phased before first bubble"
+    },
+    {
+        "fractal": "Nightmare CM",
+        "encounter": "MAMA",
+        "event": "Renegade not highest CC"
+    },
+    {
+        "fractal": "Nightmare",
+        "encounter": "Bullet Hell",
+        "event": "Full wipe at pre"
+    },
+    {
+        "fractal": "Nightmare CM",
+        "encounter": "Bullet Hell",
+        "event": "Infinite Condis - Lack of cleanse"
+    },
+    {
+        "fractal": "Nightmare CM",
+        "encounter": "Bullet Hell",
+        "event": "Leecher - Someone went AFK during pre"
+    },
+    {
+        "fractal": "Nightmare CM",
+        "encounter": "Bullet Hell",
+        "event": "PvP Roleplay - You capped a circle"
+    },
+    {
+        "fractal": "Nightmare",
+        "encounter": "Bullet Hell",
+        "event": "Someone skipped with Choya Tonic"
+    },
+    {
+        "fractal": "Nightmare",
+        "encounter": "Bullet Hell",
+        "event": "No Choya skip"
+    },
+    {
+        "fractal": "Nightmare CM",
+        "encounter": "Siax",
+        "event": "Smooth kill"
+    },
+    {
+        "fractal": "Nightmare CM",
+        "encounter": "Siax",
+        "event": "Mid spit"
+    },
+    {
+        "fractal": "Nightmare CM",
+        "encounter": "Siax",
+        "event": "No Aegis!? Got hit & spawned Hallucination"
+    },
+    {
+        "fractal": "Nightmare CM",
+        "encounter": "Ensolyss",
+        "event": "Smooth kill"
+    },
+    {
+        "fractal": "Nightmare CM",
+        "encounter": "Ensolyss",
+        "event": "Pro CC - Successful instabreak"
+    },
+    {
+        "fractal": "Nightmare CM",
+        "encounter": "Ensolyss",
+        "event": "Attempted & failed instabreak"
+    },
+    {
+        "fractal": "Nightmare CM",
+        "encounter": "Ensolyss",
+        "event": "No instabreak attempts"
+    },
+    {
+        "fractal": "Nightmare CM",
+        "encounter": "Ensolyss",
+        "event": "No teleport to mid after dash"
+    },
+    {
+        "fractal": "Shattered CM",
+        "event": "LNHB success (intentional /gg not counted)"
+    },
+    {
+        "fractal": "Shattered CM",
+        "encounter": "Skorvald",
+        "event": "Smooth kill"
+    },
+    {
+        "fractal": "Shattered CM",
+        "encounter": "Skorvald",
+        "event": "Smooth Stability support"
+    },
+    {
+        "fractal": "Shattered CM",
+        "encounter": "Skorvald",
+        "event": "Taxi - 66% & 33% portals used"
+    },
+    {
+        "fractal": "Shattered CM",
+        "encounter": "Skorvald",
+        "event": "We do cardio! - No portals used"
+    },
+    {
+        "fractal": "Shattered CM",
+        "encounter": "Skorvald",
+        "event": "You got knocked off"
+    },
+    {
+        "fractal": "Shattered CM",
+        "encounter": "Skorvald",
+        "event": "DPS over 9000 - Hit 33% before dashes complete"
+    },
+    {
+        "fractal": "Shattered CM",
+        "encounter": "Artsariiv",
+        "event": "Marble Masters - Smooth kill"
+    },
+    {
+        "fractal": "Shattered CM",
+        "encounter": "Artsariiv",
+        "event": "DPS reflected successfully"
+    },
+    {
+        "fractal": "Shattered CM",
+        "encounter": "Artsariiv",
+        "event": "You backup marble"
+    },
+    {
+        "fractal": "Shattered CM",
+        "encounter": "Artsariiv",
+        "event": "Marble fail"
+    },
+    {
+        "fractal": "Shattered CM",
+        "encounter": "Artsariiv",
+        "event": "No Aegis/Stability in middle"
+    },
+    {
+        "fractal": "Shattered CM",
+        "encounter": "Artsariiv",
+        "event": "Always Aegis/Stability in middle"
+    },
+    {
+        "fractal": "Shattered CM",
+        "encounter": "Artsariiv",
+        "event": "Highest CC"
+    },
+    {
+        "fractal": "Shattered CM",
+        "encounter": "Artsariiv",
+        "event": "Got 2 or 3 skulls"
+    },
+    {
+        "fractal": "Shattered CM",
+        "encounter": "Arkk",
+        "event": "Smooth kill"
+    },
+    {
+        "fractal": "Shattered Observatory",
+        "encounter": "Arkk",
+        "event": "Why are you running? - You got feared"
+    },
+    {
+        "fractal": "Shattered CM",
+        "event": "Skydiver - Fell from any boss platform"
+    },
+    {
+        "fractal": "Shattered CM",
+        "encounter": "Arkk",
+        "event": "Someone got hit by orb"
+    },
+    {
+        "fractal": "Shattered CM",
+        "encounter": "Arkk",
+        "event": "SAK OP - No orb fails"
+    },
+    {
+        "fractal": "Shattered Observatory",
+        "encounter": "Arkk",
+        "event": "Skull fail"
+    },
+    {
+        "fractal": "Shattered CM",
+        "encounter": "Arkk",
+        "event": "Renegade dominated in CC"
+    },
+    {
+        "fractal": "Old CM",
+        "event": "Old but gold - Power DPS in old CM"
+    },
+    {
+        "fractal": "Old CM",
+        "event": "New meta - Condi DPS in old CM"
+    },
+    {
+        "fractal": "Sunqua CM",
+        "event": "DwD success (intentional /gg not counted)"
+    },
+    {
+        "fractal": "Sunqua CM",
+        "encounter": "Ai",
+        "event": "Smooth kill"
+    },
+    {
+        "fractal": "Sunqua CM",
+        "encounter": "Ai",
+        "event": "Death by Beyblade - Hit by spin"
+    },
+    {
+        "fractal": "Sunqua CM",
+        "encounter": "Elemental Ai",
+        "event": "Forgotten mechanics: Reached clouds"
+    },
+    {
+        "fractal": "Sunqua CM",
+        "encounter": "Elemental Ai",
+        "event": "Someone ran out from/with water green"
+    },
+    {
+        "fractal": "Sunqua CM",
+        "encounter": "Elemental Ai",
+        "event": "Staying dry - Killed before water tornado"
+    },
+    {
+        "fractal": "Sunqua CM",
+        "encounter": "Dark Ai",
+        "event": "Failed a Sorrow"
+    },
+    {
+        "fractal": "Sunqua CM",
+        "encounter": "Ai",
+        "event": "Smooth CC"
+    },
+    {
+        "fractal": "All CM",
+        "event": "Pro Strats - Ran no heal on any boss"
+    },
+    {
+        "fractal": "All",
+        "event": "Impostor - You sabotaged someone else"
+    },
+    {
+        "fractal": "All",
+        "event": "Crewmate - Got sabotaged by someone"
+    },
+    {
+        "fractal": "All",
+        "event": "Weaver Roleplay - You downed a lot"
+    },
+    {
+        "fractal": "Nightmare CM",
+        "encounter": "Siax",
+        "event": "Disoriented - Someone went to wrong add"
+    },
+    {
+        "fractal": "Nightmare CM",
+        "encounter": "Siax",
+        "event": "No Aegis/Stability fails"
+    },
+    {
+        "fractal": "Nightmare CM",
+        "encounter": "Siax",
+        "event": "Broke 2nd breakbar below 33%"
+    },
+    {
+        "fractal": "Nightmare CM",
+        "encounter": "Ensolyss",
+        "event": "Air Ensolyss - Knocked away"
+    },
+    {
+        "fractal": "Nightmare CM",
+        "encounter": "MAMA",
+        "event": "Someone went wrong direction at 25%"
+    },
+    {
+        "fractal": "Shattered CM",
+        "encounter": "Artsariiv",
+        "event": "Failed/stolen reflect"
+    },
+    {
+        "fractal": "Shattered CM",
+        "encounter": "Arkk",
+        "event": "No bubble - Failed Anomaly"
+    },
+    {
+        "fractal": "All",
+        "event": "Wait! - Someone on wrong traits/gear"
+    },
+    {
+        "fractal": "Sunqua CM",
+        "encounter": "Dark Ai",
+        "event": "Necro OP - Epi strat for Sorrows"
+    },
+    {
+        "fractal": "Sunqua CM",
+        "encounter": "Ai",
+        "event": "Players stacked & survived during circles"
+    },
+    {
+        "fractal": "All",
+        "event": "Deserter - Someone left mid run"
+    },
+    {
+        "fractal": "All CM",
+        "event": "Healing the boss - Someone with low DPS"
+    },
+    {
+        "fractal": "Sunqua CM",
+        "encounter": "Dark Ai",
+        "event": "Slowpoke - Fear got someone"
+    },
+    {
+        "fractal": "Sunqua CM",
+        "encounter": "Dark Ai",
+        "event": "Light-footed - No Fear fails"
+    },
+    {
+        "fractal": "Sunqua CM",
+        "encounter": "Ai",
+        "event": "To Narnia: Boss dashed to middle of nowhere"
+    },
+    {
+        "fractal": "Dailies",
+        "event": "Someone forgot/without Pots"
+    },
+    {
+        "fractal": "Dailies",
+        "event": "Skip Day - Molten Furnace, Siren's Reef & Deepstone Daily"
+    },
+    {
+        "fractal": "Uncategorized",
+        "event": "Someone fails JP at start"
+    },
+    {
+        "fractal": "Uncategorized",
+        "event": "Skipped JP after Old Tom"
+    },
+    {
+        "fractal": "Aquatic Ruins",
+        "event": "No or low level underwater gear"
+    },
+    {
+        "fractal": "Aquatic Ruins",
+        "event": "Rich kid - Ascended underwater gear"
+    },
+    {
+        "fractal": "Snowblind",
+        "event": "Choya skip to final boss cave"
+    },
+    {
+        "fractal": "Snowblind",
+        "event": "Cheesed Elemental with reflect"
+    },
+    {
+        "fractal": "All",
+        "event": "Trickjumped & avoided Flux Bomb"
+    },
+    {
+        "fractal": "Aetherblade",
+        "event": "Someone died to underwater mines"
+    },
+    {
+        "fractal": "Aetherblade",
+        "event": "Skip for floor tile traps"
+    },
+    {
+        "fractal": "Aetherblade",
+        "event": "Got Mistlock before cannon room"
+    },
+    {
+        "fractal": "Molten Boss",
+        "event": "Got Mistlock after Molten Effigy"
+    },
+    {
+        "fractal": "Molten Boss",
+        "event": "Skip to downstairs at the start"
+    },
+    {
+        "fractal": "Cliffside",
+        "event": "Caught in cage"
+    },
+    {
+        "fractal": "Cliffside",
+        "event": "Portal for arm seals"
+    },
+    {
+        "fractal": "Deepstone",
+        "event": "Fell down anywhere"
+    },
+    {
+        "fractal": "Solid Ocean",
+        "event": "Choya skip at start"
+    },
+    {
+        "fractal": "Solid Ocean",
+        "event": "Hit by Jade Maw beam"
+    },
+    {
+        "fractal": "Swampland",
+        "event": "God damnit - Caught in trap"
+    },
+    {
+        "fractal": "Swampland",
+        "event": "Cheesed Wisps with portal"
+    },
+    {
+        "fractal": "Swampland",
+        "event": "Group killed Champion Oakheart"
+    },
+    {
+        "fractal": "Thaumanova Reactor",
+        "event": "You solo heat room"
+    },
+    {
+        "fractal": "Thaumanova Reactor",
+        "event": "Someone dies in heat room"
+    },
+    {
+        "fractal": "Thaumanova Reactor",
+        "event": "Bursted Subject Six first try"
+    },
+    {
+        "fractal": "Thaumanova Reactor",
+        "event": "Wipe at Anomaly"
+    },
+    {
+        "fractal": "Thaumanova Reactor",
+        "event": "Killed Anomaly first try"
+    },
+    {
+        "fractal": "Twilight Oasis",
+        "event": "Portal to 2nd Sandbinder"
+    },
+    {
+        "fractal": "Twilight Oasis",
+        "event": "Turned into Moa"
+    },
+    {
+        "fractal": "Twilight Oasis",
+        "event": "Knocked by any attack at Amala"
+    },
+    {
+        "fractal": "Underground Facility",
+        "event": "Someone does cage skip"
+    },
+    {
+        "fractal": "Underground Facility",
+        "event": "Final Boss: Ice Elemental"
+    },
+    {
+        "fractal": "Underground Facility",
+        "event": "Final Boss: Dredge Suit"
+    },
+    {
+        "fractal": "Urban Battleground",
+        "event": "Someone dies before gate opened"
+    },
+    {
+        "fractal": "Urban Battleground",
+        "event": "Everyone survived until gate opened"
+    },
+    {
+        "fractal": "Urban Battleground",
+        "event": "JP skip from gate to courtyard"
+    },
+    {
+        "fractal": "Volcanic",
+        "event": "Had to run from start to Grawl Shaman"
+    },
+    {
+        "fractal": "Volcanic",
+        "event": "Portal from start to Grawl Shaman"
+    },
+    {
+        "fractal": "Volcanic",
+        "event": "Skipped through lava to Imbued Shaman (end boss)"
+    },
+    {
+        "fractal": "Chaos",
+        "event": "Failed Harpy JP"
+    },
+    {
+        "fractal": "Chaos",
+        "event": "Flux Bomb on group"
+    },
+    {
+        "fractal": "Chaos",
+        "event": "Dazed at Brazen Gladiator"
+    },
+    {
+        "fractal": "Chaos",
+        "event": "Lit at least 1 bonfire"
+    },
+    {
+        "fractal": "Siren's Reef",
+        "event": "Infinite Condis - Lack of cleanse"
+    },
+    {
+        "fractal": "Siren's Reef",
+        "event": "Any cannon shooter fails"
+    },
+    {
+        "fractal": "Deepstone",
+        "event": "No/failed pull in elevator"
+    },
+    {
+        "fractal": "Deepstone",
+        "event": "Completed left side floor trap"
+    },
+    {
+        "fractal": "All",
+        "event": "Healer downed during fight"
+    },
+    {
+        "fractal": "All",
+        "event": "Bonus Memes - Ran Recs as well"
+    },
+    {
+        "fractal": "Nightmare",
+        "encounter": "Bullet Hell",
+        "event": "Hit Fleshgorge (shark)"
+    },
+    {
+        "fractal": "All",
+        "event": "Pulling a german - Someone types 7gg"
+    },
+    {
+        "fractal": "Captain Mai Trin Boss",
+        "event": "Someone dies during kill attempt"
+    },
+    {
+        "fractal": "Captain Mai Trin Boss",
+        "event": "No amateurs allowed - First try kill"
+    },
+    {
+        "fractal": "Captain Mai Trin Boss",
+        "event": "Mai Trin's shadowstep fails"
+    },
+    {
+        "fractal": "Captain Mai Trin Boss",
+        "event": "Mai Trin's shadowstep fails"
+    },
+    {
+        "fractal": "Cliffside",
+        "event": "Oops - Fell down or caught in trap"
+    },
+    {
+        "fractal": "Molten Furnace",
+        "event": "Knocked at final encounter"
+    },
+    {
+        "fractal": "Molten Furnace",
+        "event": "Material Storage Gamer - Mined Mithril"
+    },
+    {
+        "fractal": "Sunqua Peak",
+        "event": "Completed JP to Air Elemental"
+    },
+    {
+        "fractal": "Sunqua Peak",
+        "event": "Talked to any Frightened Water Elemental"
+    },
+    {
+        "fractal": "Sunqua Peak",
+        "event": "\"Tamed\" any of the Elementals"
+    }
+]
