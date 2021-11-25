@@ -37,6 +37,8 @@ module.exports = {
             tsx: "never",
             scss: "always",
             json: "always"
-        }]
+        }],
+        "no-anonymous-exports-page-templates": "warn",
+        "limited-exports-page-templates": "warn"
     }
 };
