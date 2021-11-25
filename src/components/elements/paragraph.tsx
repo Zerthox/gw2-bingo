@@ -6,7 +6,7 @@ export interface ParagraphProps extends HTMLAttributes<HTMLElement> {
     align?: "left" | "right" | "center" | "justify";
 }
 
-const Paragraph = ({align = "left", className, children, ...props}: ParagraphProps): JSX.Element => (
+export const Paragraph = ({align = "left", className, children, ...props}: ParagraphProps): JSX.Element => (
     <div
         className={classNames(styles.paragraph, styles[align], className)}
         {...props}
@@ -14,5 +14,3 @@ const Paragraph = ({align = "left", className, children, ...props}: ParagraphPro
         {children}
     </div>
 );
-
-export default Paragraph;

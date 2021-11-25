@@ -1,7 +1,7 @@
 import React from "react";
-import Layout from "../components/layout";
+import {Layout} from "../components/layout";
 import {Link, Paragraph} from "../components/elements";
-import Bingo from "../components/bingo";
+import {Bingo} from "../components/bingo";
 
 const HowTo = (): JSX.Element => (
     <Layout title="How to play">

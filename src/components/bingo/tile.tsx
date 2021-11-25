@@ -13,7 +13,7 @@ export interface TileProps extends Item {
     onClick?: () => void;
 }
 
-const Tile = ({title, content, highlight, className, onClick}: TileProps): JSX.Element => (
+export const Tile = ({title, content, highlight, className, onClick}: TileProps): JSX.Element => (
     <div
         className={classNames(styles.tile, className, {
             [styles.clickable]: onClick instanceof Function,
@@ -25,5 +25,3 @@ const Tile = ({title, content, highlight, className, onClick}: TileProps): JSX.E
         <div className={styles.content}>{content}</div>
     </div>
 );
-
-export default Tile;

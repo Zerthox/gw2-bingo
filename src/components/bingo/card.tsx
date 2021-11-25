@@ -1,5 +1,5 @@
 import React, {useState, forwardRef, ForwardedRef} from "react";
-import Tile, {TileProps} from "./tile";
+import {Tile, TileProps} from "./tile";
 import * as styles from "./card.module.scss";
 
 export type FieldProps = Omit<TileProps, "highlight">;

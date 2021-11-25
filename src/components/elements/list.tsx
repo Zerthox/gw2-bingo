@@ -6,7 +6,7 @@ export interface ListProps {
     children: Item[]
 }
 
-const List = ({children}: ListProps): JSX.Element => (
+export const List = ({children}: ListProps): JSX.Element => (
     <div className={styles.list}>
         {children.map(({title, content}, i) => (
             <div key={i} className={styles.entry}>
@@ -16,5 +16,3 @@ const List = ({children}: ListProps): JSX.Element => (
         ))}
     </div>
 );
-
-export default List;

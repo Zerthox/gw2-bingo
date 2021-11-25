@@ -9,7 +9,7 @@ export interface LinkProps {
     children: React.ReactNode;
 }
 
-const Link = ({to, className, children}: LinkProps): JSX.Element => (
+export const Link = ({to, className, children}: LinkProps): JSX.Element => (
     to.match(/^\//) ? (
         <GatsbyLink to={to} className={classNames(styles.link, className)}>{children}</GatsbyLink>
     ) : (
@@ -23,5 +23,3 @@ const Link = ({to, className, children}: LinkProps): JSX.Element => (
         </a>
     )
 );
-
-export default Link;

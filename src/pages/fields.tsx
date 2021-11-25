@@ -1,7 +1,7 @@
 import React from "react";
-import Layout from "../components/layout";
+import {Layout} from "../components/layout";
 import {Paragraph, List} from "../components/elements";
-import {fields, toItem, Field} from "../data";
+import {useFields, toItem, Field} from "../hooks";
 
 const cms = [
     "All CM",
@@ -65,15 +65,18 @@ const compare = (a: Field, b: Field) => {
     return a.fractal.localeCompare(b.fractal);
 };
 
-const Fields = (): JSX.Element => (
-    <Layout title="Bingo Fields">
-        <Paragraph align="center">
-            Total count: {fields.all.length} bingo fields
-        </Paragraph>
-        <List>
-            {[...fields.all].sort(compare).map(toItem)}
-        </List>
-    </Layout>
-);
+const Fields = (): JSX.Element => {
+    const fields = useFields();
+    return (
+        <Layout title="Bingo Fields">
+            <Paragraph align="center">
+                Total count: {fields.length} bingo fields
+            </Paragraph>
+            <List>
+                {[...fields].sort(compare).map(toItem)}
+            </List>
+        </Layout>
+    );
+};
 
 export default Fields;

@@ -10,7 +10,7 @@ export interface CheckboxProps {
     onChange?: (checked: boolean) => void;
 }
 
-const Checkbox = ({checked, disabled = false, className, children, onChange}: CheckboxProps): JSX.Element => (
+export const Checkbox = ({checked, disabled = false, className, children, onChange}: CheckboxProps): JSX.Element => (
     <label className={classNames(styles.checkbox, {[styles.disabled]: disabled}, className)}>
         <input
             type="checkbox"
@@ -22,5 +22,3 @@ const Checkbox = ({checked, disabled = false, className, children, onChange}: Ch
         <div className={styles.label}>{children}</div>
     </label>
 );
-
-export default Checkbox;

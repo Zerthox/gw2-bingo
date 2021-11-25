@@ -11,7 +11,7 @@ export interface SEOProps {
     meta?: MetaProp[];
 }
 
-const SEO = ({title, description, author, lang = "en", meta = []}: SEOProps): JSX.Element => (
+export const SEO = ({title, description, author, lang = "en", meta = []}: SEOProps): JSX.Element => (
     <Helmet
         htmlAttributes={{lang}}
         title={title}
@@ -52,5 +52,3 @@ const SEO = ({title, description, author, lang = "en", meta = []}: SEOProps): JS
         ]}
     />
 );
-
-export default SEO;

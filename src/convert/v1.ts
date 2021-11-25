@@ -2,7 +2,7 @@
 const converter = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_";
 
 /** Encodes IDs as a 12 character base64 string. */
-const encode = (ids: number[]): string => {
+export const encode = (ids: number[]): string => {
     // check ids length
     if (ids.length !== 9) {
         return "";
@@ -26,7 +26,7 @@ const encode = (ids: number[]): string => {
 };
 
 /** Decodes IDs from a 12 character base64 string. */
-const decode = (code: string): number[] => {
+export const decode = (code: string): number[] => {
     // check code length
     if (code.length !== 12) {
         return [];
@@ -56,5 +56,3 @@ const decode = (code: string): number[] => {
     }
     return ids;
 };
-
-export default {encode, decode};

@@ -2,19 +2,20 @@ import React, {useRef, useState} from "react";
 import {PageProps} from "gatsby";
 import classNames from "classnames";
 import {toBlob} from "html-to-image";
-import Layout, {spacing} from "../../components/layout";
+import {Layout, spacing} from "../../components/layout";
 import {Button, Paragraph} from "../../components/elements";
-import Bingo from "../../components/bingo";
-import convert from "../../convert/v1";
-import {fields} from "../../data";
+import {Bingo} from "../../components/bingo";
+import {useFieldCount} from "../../hooks";
+import {decode} from "../../convert/v1";
 
 const App = ({location}: PageProps): JSX.Element => {
+    const fieldCount = useFieldCount();
     const ref = useRef();
     const [msg, setMsg] = useState<string>(null);
-    const ids = convert.decode(location.search.slice(1));
+    const ids = decode(location.search.slice(1));
     return (
         <Layout title="Bingo Card">
-            {ids.length > 0 && ids.every((id) => id < fields.all.length) ? (
+            {ids.length > 0 && ids.every((id) => id < fieldCount) ? (
                 <>
                     <Bingo ref={ref} ids={ids}/>
                     <div className={classNames(spacing.top10, spacing.bottom20)}>
