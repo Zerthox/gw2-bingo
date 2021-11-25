@@ -9,8 +9,8 @@
     "dev": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "lint": "npx eslint src --ext .js,.jsx,.ts,.tsx -f node_modules/eslint-friendly-formatter",
-    "lint-fix": "npx eslint src --fix --ext .js,.jsx,.ts,.tsx -f node_modules/eslint-friendly-formatter"
+    "lint": "npx eslint src --ext .js,.jsx,.ts,.tsx --rulesdir node_modules/gatsby/dist/utils/eslint-rules -f node_modules/eslint-friendly-formatter",
+    "lint-fix": "npx eslint src --fix --ext .js,.jsx,.ts,.tsx --rulesdir node_modules/gatsby/dist/utils/eslint-rules -f node_modules/eslint-friendly-formatter"
   },
   "repository": {
     "type": "git",
