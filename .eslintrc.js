@@ -1,9 +1,14 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
+const rulesDirPlugin = require("eslint-plugin-rulesdir");
+rulesDirPlugin.RULES_DIR = `${__dirname}/node_modules/gatsby/dist/utils/eslint-rules`;
+
 module.exports = {
     parser: "@typescript-eslint/parser",
     env: {
         node: true
     },
     plugins: [
+        "rulesdir",
         "@typescript-eslint",
         "node",
         "import",
@@ -38,7 +43,7 @@ module.exports = {
             scss: "always",
             json: "always"
         }],
-        "no-anonymous-exports-page-templates": "warn",
-        "limited-exports-page-templates": "warn"
+        "rulesdir/no-anonymous-exports-page-templates": "warn",
+        "rulesdir/limited-exports-page-templates": "warn"
     }
 };

@@ -1,14 +1,3 @@
-const path = require("path");
-
-const gatsbyRequiredRules = path.join(
-    process.cwd(),
-    "node_modules",
-    "gatsby",
-    "dist",
-    "utils",
-    "eslint-rules"
-);
-
 module.exports = {
     siteMetadata: {
         title: "GW2 Fractal Bingo",
@@ -21,7 +10,7 @@ module.exports = {
             resolve: "gatsby-plugin-manifest",
             options: {
                 name: "GW2 Fractal Bingo",
-                icon: "src/assets/encryption.png"
+                icon: `${__dirname}/src/assets/encryption.png`
             }
         },
         "gatsby-plugin-react-helmet",
@@ -44,10 +33,11 @@ module.exports = {
         {
             resolve: "gatsby-plugin-eslint",
             options: {
-                rulePaths: [gatsbyRequiredRules],
                 stages: ["develop"],
                 extensions: ["js", "jsx", "ts", "tsx"],
-                exclude: ["node_modules", ".cache", "public"]
+                exclude: ["node_modules", ".cache", "public"],
+                emitWarning: true,
+                failOnError: false
             }
         }
     ]

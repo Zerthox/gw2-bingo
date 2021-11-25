@@ -9,8 +9,8 @@
     "dev": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "lint": "npx eslint src --ext .js,.jsx,.ts,.tsx --rulesdir node_modules/gatsby/dist/utils/eslint-rules -f node_modules/eslint-friendly-formatter",
-    "lint-fix": "npx eslint src --fix --ext .js,.jsx,.ts,.tsx --rulesdir node_modules/gatsby/dist/utils/eslint-rules -f node_modules/eslint-friendly-formatter"
+    "lint": "npx eslint src --ext .js,.jsx,.ts,.tsx -f node_modules/eslint-friendly-formatter",
+    "lint-fix": "npx eslint src --fix --ext .js,.jsx,.ts,.tsx -f node_modules/eslint-friendly-formatter"
   },
   "repository": {
     "type": "git",
@@ -29,6 +29,7 @@
     "html-to-image": "^1.9.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0",
     "sass": "^1.43.5"
   },
   "devDependencies": {
@@ -45,6 +46,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-react": "^7.27.1",
     "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-rulesdir": "^0.2.1",
     "eslint-webpack-plugin": "^3.1.1",
     "gatsby-plugin-eslint": "^4.0.2",
     "typescript": "^4.5.2"
