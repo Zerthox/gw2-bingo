@@ -1,8 +1,16 @@
 import {useStaticQuery, graphql} from "gatsby";
+import {Fractal} from "./fractals";
 import {Item} from "../components/elements";
+
+export const enum Mode {
+    Normal = "Normal",
+    CM = "CM",
+    Both = "Both"
+}
 
 export interface Field {
     fractal: string;
+    mode?: Mode;
     encounter?: string;
     event: string;
 }
@@ -14,12 +22,13 @@ interface FieldData {
     }
 }
 
-const useFieldData = (): FieldData => useStaticQuery<FieldData>(graphql`
+const useFieldData = () => useStaticQuery<FieldData>(graphql`
     query {
         allFieldsJson {
             totalCount
             nodes {
                 fractal
+                mode
                 encounter
                 event
             }
@@ -49,7 +58,13 @@ export const randomFields = (all: Field[], whitelist: Field[]): number[] => {
 };
 
 /** Converts field data to an item. */
-export const toItem = ({fractal, encounter, event}: Field): Item => ({
-    title: encounter ? `${fractal} - ${encounter}` : fractal,
-    content: event
-});
+export const toItem = (fractals: Fractal[], {fractal, mode, encounter, event}: Field): Item => {
+    const found = fractals.find(({name}) => name === fractal);
+    const display = mode === Mode.CM
+        ? `${found ? found.displayCM ?? found.name : fractal} CM`
+        : found ? found.display ?? found.name : fractal;
+    return {
+        title: encounter ? `${display} - ${encounter}` : display,
+        content: event
+    };
+};

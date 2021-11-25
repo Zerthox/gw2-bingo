@@ -33,6 +33,7 @@ module.exports = {
         "quotes": ["error", "double"],
         "no-multiple-empty-lines": ["error", {max: 1}],
         "operator-linebreak": ["error", "before"],
+        "unused-vars": "off",
         "require-jsdoc": "off",
         "valid-jsdoc": "off",
         "import/extensions": ["error", {
@@ -43,6 +44,7 @@ module.exports = {
             scss: "always",
             json: "always"
         }],
+        "@typescript-eslint/no-unused-vars": "error",
         "rulesdir/no-anonymous-exports-page-templates": "warn",
         "rulesdir/limited-exports-page-templates": "warn"
     }

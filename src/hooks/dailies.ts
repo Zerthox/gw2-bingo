@@ -1,5 +1,4 @@
 import {useStaticQuery, graphql} from "gatsby";
-import {useFractals, Fractal} from "./fractals";
 
 interface DailyData {
     allDailiesJson: {
@@ -23,10 +22,7 @@ const useDailyData = () => useStaticQuery<DailyData>(graphql`
     }
 `);
 
-export const useDailies = (): Fractal[][] => {
-    const fractals = useFractals();
-    return useDailyData().allDailiesJson.nodes.map(({_0, _1, _2}) => [fractals[_0], fractals[_1], fractals[_2]]);
-};
+export const useDailies = (): number[][] => useDailyData().allDailiesJson.nodes.map(({_0, _1, _2}) => [_0, _1, _2]);
 
 /** One day in milliseconds. */
 const DAY = 24 * 60 * 60 * 1000;
@@ -34,5 +30,5 @@ const DAY = 24 * 60 * 60 * 1000;
 /** Base offset in the daily rotation. */
 const OFFSET = 8;
 
-/** Todays fractal dailies */
-export const useTodaysDailies = (): Fractal[] => useDailies()[(Math.floor(Date.now() / DAY) + OFFSET) % 15];
+/** Todays fractal daily ids. */
+export const useTodaysDailies = (): number[] => useDailies()[(Math.floor(Date.now() / DAY) + OFFSET) % 15];

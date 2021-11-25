@@ -1,14 +1,14 @@
 import React from "react";
 import {Layout} from "../components/layout";
 import {Paragraph, List} from "../components/elements";
-import {useFields, toItem, Field} from "../hooks";
+import {useFields, toItem, Field, useFractals, Mode} from "../hooks";
 
 const cms = [
-    "All CM",
-    "Old CM",
-    "Nightmare CM",
-    "Shattered CM",
-    "Sunqua CM"
+    "All",
+    "Old",
+    "Nightmare",
+    "Shattered Observatory",
+    "Sunqua Peak"
 ];
 
 const encounters = [
@@ -24,16 +24,16 @@ const encounters = [
     "Dark Ai"
 ];
 
-const scale = (fractal: string) => {
-    if (fractal === "All") {
+const scale = ({fractal, mode}: Field) => {
+    if (mode === Mode.CM) {
+        // cms at end
+        return 2 + cms.indexOf(fractal);
+    } else if (fractal === "All") {
         // all to front
         return -2;
     } else if (fractal === "Dailies") {
         // dailies after
         return -1;
-    } else if (fractal.endsWith("CM")) {
-        // cms at end
-        return 2 + cms.indexOf(fractal);
     } else {
         // normal for regular
         return 0;
@@ -41,8 +41,8 @@ const scale = (fractal: string) => {
 };
 
 const compare = (a: Field, b: Field) => {
-    const scaleA = scale(a.fractal);
-    const scaleB = scale(b.fractal);
+    const scaleA = scale(a);
+    const scaleB = scale(b);
 
     // order of encounters within the CM fractals
     const encounterA = a.encounter ? encounters.indexOf(a.encounter) : -2;
@@ -53,7 +53,7 @@ const compare = (a: Field, b: Field) => {
         return -1;
     } else if (scaleA > scaleB) {
         return 1;
-    } else if (a.fractal.endsWith("CM")) {
+    } else if (a.mode === Mode.CM) {
         // sort cms by encounter
         if (encounterA < encounterB) {
             return -1;
@@ -66,6 +66,7 @@ const compare = (a: Field, b: Field) => {
 };
 
 const Fields = (): JSX.Element => {
+    const fractals = useFractals();
     const fields = useFields();
     return (
         <Layout title="Bingo Fields">
@@ -73,7 +74,7 @@ const Fields = (): JSX.Element => {
                 Total count: {fields.length} bingo fields
             </Paragraph>
             <List>
-                {[...fields].sort(compare).map(toItem)}
+                {[...fields].sort(compare).map((field) => toItem(fractals, field))}
             </List>
         </Layout>
     );

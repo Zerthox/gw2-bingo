@@ -2,62 +2,63 @@ import React, {useState} from "react";
 import {Layout, Grid, spacing} from "../components/layout";
 import {Link, Paragraph, Checkbox, LinkButton} from "../components/elements";
 import {encode} from "../convert/v1";
-import {useFractals, useTodaysDailies, useFields, randomFields, Field} from "../hooks";
+import {useFractals, useTodaysDailies, useFields, randomFields, Field, Mode} from "../hooks";
 
 interface Box {
-    name: string;
+    display: string;
+    fractal: string;
+    cm: boolean;
     checked: boolean;
 }
 
-const isChecked = (boxes: Box[], fractal: string) => boxes.find(({name}) => name === fractal)?.checked;
-
 const toFields = (fields: Field[], boxes: Box[]): Field[] => {
-    const hasDailies = boxes.some(({name, checked}) => checked && !name.endsWith("CM"));
+    const hasDailies = boxes.some(({cm, checked}) => checked && !cm);
+    const hasCMs = boxes.some(({cm, checked}) => checked && cm);
 
-    const hasNightmareCM = isChecked(boxes, "Nightmare CM");
-    const hasShatteredCM = isChecked(boxes, "Shattered CM");
-    const hasSunquaCM = isChecked(boxes, "Sunqua CM");
-
-    // include normal mode fields for nightmare & shattered cm
-    const hasNightmare = hasNightmareCM || isChecked(boxes, "Nightmare");
-    const hasShattered = hasShatteredCM || isChecked(boxes, "Shattered Observatory");
-
-    return fields.filter(({fractal}) => {
+    return fields.filter(({fractal, mode}) => {
         switch (fractal) {
             case "All":
-                return true;
+                return mode === Mode.CM ? hasCMs : true;
             case "Dailies":
                 return hasDailies;
-            case "All CM":
-                return hasNightmareCM || hasShatteredCM || hasSunquaCM;
-            case "Old CM":
-                return hasNightmareCM || hasShatteredCM;
-            case "Nightmare":
-                return hasNightmare;
-            case "Shattered Observatory":
-                return hasShattered;
             default:
-                return isChecked(boxes, fractal);
+                return boxes.some((box) => (
+                    box.checked
+                    && box.fractal === fractal
+                    && (
+                        mode === Mode.Both
+                        || mode === Mode.CM && box.cm
+                        || (!mode || mode === Mode.Normal) && !box.cm
+                    )
+                ));
         }
     });
 };
 
 const App = (): JSX.Element => {
-    const fractals = useFractals().slice(1).sort((a, b) => a.name.localeCompare(b.name));
+    const fractals = useFractals();
     const dailies = useTodaysDailies();
     const fields = useFields();
 
     const [boxes, setBoxes] = useState(() => [
-        ...fractals.map((fractal) => ({
-            name: fractal.name,
-            checked: dailies.includes(fractal)
-        })),
-        {name: "Nightmare CM", checked: true},
-        {name: "Shattered CM", checked: true},
-        {name: "Sunqua CM", checked: true}
+        ...fractals.map(({id, name, display}) => ({
+            fractal: name,
+            display: display ?? name,
+            cm: false,
+            checked: dailies.includes(id)
+        })).sort((a, b) => a.display.localeCompare(b.display)),
+        ...fractals.filter(({hasCM}) => hasCM).map(({name, displayCM}) => ({
+            fractal: name,
+            display: `${displayCM ?? name} CM`,
+            cm: true,
+            checked: true
+        }))
     ]);
 
-    const genRand = () => encode(randomFields(fields, toFields(fields, boxes)));
+    const genRand = () => {
+        // console.log(toFields(fields, boxes));
+        return encode(randomFields(fields, toFields(fields, boxes)));
+    };
     const [rand, setRand] = useState(genRand);
 
     return (
@@ -71,7 +72,7 @@ const App = (): JSX.Element => {
                 Generate Bingo
             </LinkButton>
             <Grid className={spacing.bottom20}>
-                {boxes.map(({name, checked}, i) => (
+                {boxes.map(({display, checked}, i) => (
                     <Checkbox
                         key={i}
                         checked={checked}
@@ -81,7 +82,7 @@ const App = (): JSX.Element => {
                             setRand(genRand);
                         }}
                     >
-                        {name}
+                        {display}
                     </Checkbox>
                 ))}
             </Grid>

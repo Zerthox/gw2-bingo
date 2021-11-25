@@ -2,111 +2,136 @@
     {
         "id": 0,
         "name": "Mistlock Observatory",
+        "hasCM": false,
         "scales": []
     },
     {
         "id": 1,
         "name": "Volcanic",
+        "hasCM": false,
         "scales": [1, 19, 28, 52, 92]
     },
     {
         "id": 2,
         "name": "Uncategorized",
+        "hasCM": false,
         "scales": [2, 36, 44, 62, 79, 91]
     },
     {
         "id": 3,
         "name": "Snowblind",
+        "hasCM": false,
         "scales": [3, 27, 51, 68, 86, 93]
     },
     {
         "id": 4,
         "name": "Urban Battleground",
+        "hasCM": false,
         "scales": [4, 31, 57, 66, 85]
     },
     {
         "id": 5,
         "name": "Swampland",
+        "hasCM": false,
         "scales": [5, 17, 32, 56, 77, 89]
     },
     {
         "id": 6,
         "name": "Cliffside",
+        "hasCM": false,
         "scales": [6, 21, 47, 69, 94]
     },
     {
         "id": 7,
         "name": "Aquatic Ruins",
+        "hasCM": false,
         "scales": [7, 26, 61, 76]
     },
     {
         "id": 8,
         "name": "Underground Facility",
+        "hasCM": false,
         "scales": [8, 29, 53, 81]
     },
     {
         "id": 9,
         "name": "Solid Ocean",
+        "hasCM": false,
         "scales": [20, 35, 45, 60, 80]
     },
     {
         "id": 10,
         "name": "Molten Furnace",
+        "hasCM": false,
         "scales": [9, 22, 39, 58, 83]
     },
     {
         "id": 11,
         "name": "Molten Boss",
+        "hasCM": false,
         "scales": [	10, 40, 70, 90]
     },
     {
         "id": 12,
         "name": "Aetherblade",
+        "hasCM": false,
         "scales": [14, 46, 65, 71, 96]
     },
     {
         "id": 13,
         "name": "Thaumanova Reactor",
+        "hasCM": false,
         "scales": [15, 34, 43, 55, 64, 82]
     },
     {
         "id": 14,
         "name": "Captain Mai Trin Boss",
+        "display": "Captain Mai Trin",
+        "hasCM": false,
         "scales": [18, 42, 72, 95]
     },
     {
         "id": 15,
         "name": "Chaos",
+        "hasCM": false,
         "scales": [13, 30, 38, 63, 88, 97]
     },
     {
         "id": 16,
         "name": "Nightmare",
+        "hasCM": true,
         "scales": [23, 48, 73, 98]
     },
     {
         "id": 17,
         "name": "Shattered Observatory",
+        "displayCM": "Shattered",
+        "hasCM": true,
         "scales": [24, 49, 74, 99]
     },
     {
         "id": 18,
         "name": "Twilight Oasis",
+        "hasCM": false,
         "scales": [16, 41, 59, 87]
     },
     {
         "id": 19,
         "name": "Deepstone",
+        "hasCM": false,
         "scales": [11, 33, 67, 84]
     },
     {
         "id": 20,
         "name": "Siren's Reef",
+        "hasCM": false,
         "scales": [12, 37, 54, 78]
     },
     {
         "id": 21,
         "name": "Sunqua Peak",
+        "displayCM": "Sunqua",
+        "hasCM": true,
         "scales": [25, 50, 75, 100]
     }
 ]

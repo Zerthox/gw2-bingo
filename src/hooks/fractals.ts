@@ -3,25 +3,33 @@ import {useStaticQuery, graphql} from "gatsby";
 export interface Fractal {
     id: number;
     name: string;
+    display?: string;
+    hasCM: boolean;
+    displayCM?: string;
     scales: number[];
 }
 
 interface FractalData {
     allFractalsJson: {
-        nodes: Fractal[];
+        nodes: (Omit<Fractal, "id"> & {jsonId: number})[];
     }
 }
 
-const useFractalData = (): FractalData => useStaticQuery<FractalData>(graphql`
+const useFractalData = () => useStaticQuery<FractalData>(graphql`
     query {
         allFractalsJson {
             nodes {
-                id
+                jsonId
                 name
+                display
+                hasCM
+                displayCM
                 scales
             }
         }
     }
 `);
 
-export const useFractals = (): Fractal[] => useFractalData().allFractalsJson.nodes;
+export const useFractalsWithLobby = (): Fractal[] => useFractalData().allFractalsJson.nodes.map(({jsonId, ...rest}) => ({id: jsonId, ...rest}));
+
+export const useFractals = (): Fractal[] => useFractalsWithLobby().slice(1);

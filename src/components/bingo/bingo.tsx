@@ -1,5 +1,5 @@
 import React, {forwardRef, ForwardedRef} from "react";
-import {useFields, toItem} from "../../hooks";
+import {useFractals, useFields, toItem} from "../../hooks";
 import Card from "./card";
 
 export interface BingoProps {
@@ -7,8 +7,9 @@ export interface BingoProps {
 }
 
 const Bingo = ({ids}: BingoProps, ref: ForwardedRef<HTMLDivElement>): JSX.Element => {
+    const fractals = useFractals();
     const fields = useFields();
-    return <Card ref={ref} tiles={ids.map((id) => toItem(fields[id]))}/>;
+    return <Card ref={ref} tiles={ids.map((id) => toItem(fractals, fields[id]))}/>;
 };
 
 export default forwardRef(Bingo);
