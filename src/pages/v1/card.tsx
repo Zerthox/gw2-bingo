@@ -1,4 +1,4 @@
-import React, {useRef, useState} from "react";
+import React, {useRef, useState, useEffect} from "react";
 import {PageProps} from "gatsby";
 import classNames from "classnames";
 import {toBlob} from "html-to-image";
@@ -12,41 +12,50 @@ const App = ({location}: PageProps): JSX.Element => {
     const fieldCount = useFieldCount();
     const ref = useRef();
     const [msg, setMsg] = useState<string>(null);
+
+    // make sure we hydrate on client side
+    const [ready, setReady] = useState(false);
+    useEffect(() => setReady(true));
+
     const ids = decode(location.search.slice(1));
+    const isValid = ids.length === 9 && ids.every((id) => id < fieldCount);
+
     return (
         <Layout title="Bingo Card">
-            {ids.length > 0 && ids.every((id) => id < fieldCount) ? (
-                <>
-                    <Bingo ref={ref} ids={ids}/>
-                    <div className={classNames(spacing.top10, spacing.bottom20)}>
-                        <Button
-                            onClick={async () => {
-                                try {
-                                    const blob = await toBlob(ref.current);
-                                    navigator.clipboard.write([
-                                        new ClipboardItem({
-                                            // temporary error bypass until typescript fixes this
-                                            [blob.type]: blob as unknown as ClipboardItemData
-                                        })
-                                    ]);
-                                    setMsg("Copied to clipboard.");
-                                } catch (err) {
-                                    console.error(err);
-                                    setMsg("Error copying to clipboard. May be due to missing permissions or using an unsupported browser.");
-                                }
-                            }}
-                        >Copy as image</Button>
-                        {msg ? (
-                            <Paragraph>{msg}</Paragraph>
-                        ) : null}
-                    </div>
-                </>
-            ) : (
-                <>
-                    <Paragraph>Seems like you have gotten a malformed bingo link.</Paragraph>
-                    <Paragraph>Maybe generate a new one on the home page instead?</Paragraph>
-                </>
-            )}
+            {!ready ? null
+                : isValid ? (
+                    <>
+                        <Bingo ref={ref} ids={ids}/>
+                        <div className={classNames(spacing.top10, spacing.bottom20)}>
+                            <Button
+                                onClick={async () => {
+                                    try {
+                                        const blob = await toBlob(ref.current);
+                                        navigator.clipboard.write([
+                                            new ClipboardItem({
+                                                // temporary error bypass until typescript fixes this
+                                                [blob.type]: blob as unknown as ClipboardItemData
+                                            })
+                                        ]);
+                                        setMsg("Copied to clipboard.");
+                                    } catch (err) {
+                                        console.error(err);
+                                        setMsg("Error copying to clipboard. May be due to missing permissions or using an unsupported browser.");
+                                    }
+                                }}
+                            >Copy as image</Button>
+                            {msg ? (
+                                <Paragraph>{msg}</Paragraph>
+                            ) : null}
+                        </div>
+                    </>
+                ) : (
+                    <>
+                        <Paragraph>Seems like you have gotten a malformed bingo link.</Paragraph>
+                        <Paragraph>Maybe generate a new one on the home page instead?</Paragraph>
+                    </>
+                )
+            }
         </Layout>
     );
 };
