@@ -1,4 +1,4 @@
-import React, {useRef, useState, useEffect} from "react";
+import React, {useRef, useState} from "react";
 import {PageProps} from "gatsby";
 import classNames from "classnames";
 import {toBlob} from "html-to-image";
@@ -8,22 +8,20 @@ import {Bingo} from "../../components/bingo";
 import {useFieldCount} from "../../hooks";
 import {decode} from "../../convert/v1";
 
+const isBrowser = typeof window !== "undefined";
+
 const App = ({location}: PageProps): JSX.Element => {
     const fieldCount = useFieldCount();
     const ref = useRef();
     const [msg, setMsg] = useState<string>(null);
-
-    // make sure we hydrate on client side
-    const [ready, setReady] = useState(false);
-    useEffect(() => setReady(true));
 
     const ids = decode(location.search.slice(1));
     const isValid = ids.length === 9 && ids.every((id) => id < fieldCount);
 
     return (
         <Layout title="Bingo Card">
-            {!ready ? null
-                : isValid ? (
+            {isBrowser ? (
+                isValid ? (
                     <>
                         <Bingo ref={ref} ids={ids}/>
                         <div className={classNames(spacing.top10, spacing.bottom20)}>
@@ -55,7 +53,7 @@ const App = ({location}: PageProps): JSX.Element => {
                         <Paragraph>Maybe generate a new one on the home page instead?</Paragraph>
                     </>
                 )
-            }
+            ) : null}
         </Layout>
     );
 };

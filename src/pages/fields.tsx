@@ -68,6 +68,7 @@ const compare = (a: Field, b: Field) => {
 const Fields = (): JSX.Element => {
     const fractals = useFractals();
     const fields = useFields();
+
     return (
         <Layout title="Bingo Fields">
             <Paragraph align="center">
