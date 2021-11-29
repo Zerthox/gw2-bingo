@@ -30,10 +30,7 @@ const App = ({location}: PageProps): JSX.Element => {
                                     try {
                                         const blob = await toBlob(ref.current);
                                         navigator.clipboard.write([
-                                            new ClipboardItem({
-                                                // temporary error bypass until typescript fixes this
-                                                [blob.type]: blob as unknown as ClipboardItemData
-                                            })
+                                            new ClipboardItem({[blob.type]: blob})
                                         ]);
                                         setMsg("Copied to clipboard.");
                                     } catch (err) {

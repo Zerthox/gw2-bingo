@@ -29,12 +29,19 @@ module.exports = {
                 allExtensions: true
             }
         },
+        "gatsby-plugin-typescript-checker",
         {
             resolve: "gatsby-plugin-sass",
             options: {
                 sassOptions: {
                     includePaths: [`${__dirname}/src/styles`]
                 }
+            }
+        },
+        {
+            resolve: "gatsby-plugin-dts-css-modules",
+            options: {
+                dropEmptyFile: true
             }
         },
         {
