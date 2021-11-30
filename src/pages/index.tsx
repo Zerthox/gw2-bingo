@@ -41,11 +41,11 @@ const App = (): JSX.Element => {
     const fields = useFields();
 
     const [boxes, setBoxes] = useState(() => [
-        ...fractals.map(({id, name, display}) => ({
+        ...fractals.map(({id, name, display, hasCM}) => ({
             fractal: name,
             display: display ?? name,
             cm: false,
-            checked: dailies.includes(id)
+            checked: !hasCM && dailies.includes(id)
         })).sort((a, b) => a.display.localeCompare(b.display)),
         ...fractals.filter(({hasCM}) => hasCM).map(({name, displayCM}) => ({
             fractal: name,
@@ -55,10 +55,7 @@ const App = (): JSX.Element => {
         }))
     ]);
 
-    const genRand = () => {
-        // console.log(toFields(fields, boxes));
-        return encode(randomFields(fields, toFields(fields, boxes)));
-    };
+    const genRand = () => encode(randomFields(fields, toFields(fields, boxes)));
     const [rand, setRand] = useState(genRand);
 
     return (
