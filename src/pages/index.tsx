@@ -2,18 +2,20 @@ import React, {useState} from "react";
 import {Layout, Grid, spacing} from "../components/layout";
 import {Link, Paragraph, Checkbox, LinkButton} from "../components/elements";
 import {encode} from "../convert/v1";
-import {useFractals, useTodaysDailies, useFields, randomFields, Field, Mode} from "../hooks";
+import {useFractals, useTodaysDailies, useTodaysRecs, scaleToTier, useFields, randomFields, Field, Mode} from "../hooks";
 
 interface Box {
     display: string;
     fractal: string;
-    cm: boolean;
+    isCM: boolean;
+    isDaily: boolean;
+    rec: number;
     checked: boolean;
 }
 
 const toFields = (fields: Field[], boxes: Box[]): Field[] => {
-    const hasDailies = boxes.some(({cm, checked}) => checked && !cm);
-    const hasCMs = boxes.some(({cm, checked}) => checked && cm);
+    const hasDailies = boxes.some(({isCM, checked}) => checked && !isCM);
+    const hasCMs = boxes.some(({isCM, checked}) => checked && isCM);
 
     return fields.filter(({fractal, mode}) => {
         switch (fractal) {
@@ -27,8 +29,8 @@ const toFields = (fields: Field[], boxes: Box[]): Field[] => {
                     && box.fractal === fractal
                     && (
                         mode === Mode.Both
-                        || mode === Mode.CM && box.cm
-                        || (!mode || mode === Mode.Normal) && !box.cm
+                        || mode === Mode.CM && box.isCM
+                        || (!mode || mode === Mode.Normal) && !box.isCM
                     )
                 ));
         }
@@ -38,19 +40,24 @@ const toFields = (fields: Field[], boxes: Box[]): Field[] => {
 const App = (): JSX.Element => {
     const fractals = useFractals();
     const dailies = useTodaysDailies();
+    const recs = useTodaysRecs();
     const fields = useFields();
 
     const [boxes, setBoxes] = useState(() => [
-        ...fractals.map(({id, name, display, hasCM}) => ({
+        ...fractals.map(({id, name, display, scales, hasCM}) => ({
             fractal: name,
             display: display ?? name,
-            cm: false,
+            isCM: false,
+            isDaily: dailies.includes(id),
+            rec: scaleToTier(scales.find((scale) => recs.includes(scale)) ?? 0),
             checked: !hasCM && dailies.includes(id)
         })).sort((a, b) => a.display.localeCompare(b.display)),
-        ...fractals.filter(({hasCM}) => hasCM).map(({name, displayCM}) => ({
+        ...fractals.filter(({hasCM}) => hasCM).map(({id, name, displayCM}) => ({
             fractal: name,
             display: `${displayCM ?? name} CM`,
-            cm: true,
+            isCM: true,
+            isDaily: dailies.includes(id),
+            rec: 0,
             checked: true
         }))
     ]);
@@ -65,11 +72,9 @@ const App = (): JSX.Element => {
                 to={`/v1/card?${rand}`}
                 className={spacing.bottom20}
                 onMouseDown={() => setRand(genRand)}
-            >
-                Generate Bingo
-            </LinkButton>
+            >Generate Bingo</LinkButton>
             <Grid className={spacing.bottom20}>
-                {boxes.map(({display, checked}, i) => (
+                {boxes.map(({display, isDaily, rec, checked}, i) => (
                     <Checkbox
                         key={i}
                         checked={checked}
@@ -80,6 +85,8 @@ const App = (): JSX.Element => {
                         }}
                     >
                         {display}
+                        {isDaily ? <code> [D]</code> : null}
+                        {rec > 0 ? <code> [R{rec}]</code> : null}
                     </Checkbox>
                 ))}
             </Grid>

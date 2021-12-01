@@ -33,3 +33,17 @@ const useFractalData = () => useStaticQuery<FractalData>(graphql`
 export const useFractalsWithLobby = (): Fractal[] => useFractalData().allFractalsJson.nodes.map(({jsonId, ...rest}) => ({id: jsonId, ...rest}));
 
 export const useFractals = (): Fractal[] => useFractalsWithLobby().slice(1);
+
+export const scaleToTier = (scale: number) => {
+    if (scale <= 0 || scale >= 100) {
+        return 0;
+    } else if (scale <= 25) {
+        return 1;
+    } else if (scale <= 50) {
+        return 2;
+    } else if (scale <= 75) {
+        return 3;
+    } else {
+        return 4;
+    }
+};
