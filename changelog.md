@@ -1,5 +1,5 @@
 # 2021-12-01
-- Add Daily & Rec display to bingo selection
+- Add Daily & Rec display to Fractal selection
 
 # 2021-11-24
 - Add & adjust some bingo fields
