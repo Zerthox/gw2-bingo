@@ -42,13 +42,26 @@ export const useRecs = (): number[][] => useDailyData().allRecsJson.nodes.map(({
 const DAY = 24 * 60 * 60 * 1000;
 
 /** Base offset in the daily rotation. */
-const OFFSET = 8;
+const OFFSET = 0;
 
-/** Todays index in the daily rotation. */
-const todaysIndex = () => (Math.floor(Date.now() / DAY) + OFFSET) % 15;
+/** Returns the index in the daily rotation for a given date. */
+const indexFor = (date: Date) => {
+    // calculate the time passed since start of the year
+    const start = Date.UTC(date.getUTCFullYear(), 0, 1);
+    const passed = date.getTime() - start;
 
-/** Todays fractal daily ids. */
-export const useTodaysDailies = (): number[] => useDailies()[todaysIndex()];
+    // days passed are the rotation
+    return (Math.floor(passed / DAY) + OFFSET) % 15;
+};
 
-/** Todays fractal rec scales. */
-export const useTodaysRecs = (): number[] => useRecs()[todaysIndex()];
+/** Returns the fractal daily ids for a given date. */
+export const useDailiesFor = (date: Date): number[] => useDailies()[indexFor(date)];
+
+/** Returns the fractal rec scales for a given date. */
+export const useRecsFor = (date: Date): number[] => useRecs()[indexFor(date)];
+
+/** Returns todays fractal daily ids. */
+export const useTodaysDailies = (): number[] => useDailiesFor(new Date());
+
+/** Returns todays fractal rec scales. */
+export const useTodaysRecs = (): number[] => useRecsFor(new Date());
