@@ -1,5 +1,5 @@
 import React, {useState, useMemo} from "react";
-import {Layout, Grid, spacing} from "../components/layout";
+import {Layout, Flex, Grid, spacing} from "../components/layout";
 import {Link, Paragraph, Checkbox, LinkButton} from "../components/elements";
 import {encode} from "../convert/v1";
 import {useFractals, useTodaysDailies, useTodaysRecs, scaleToTier, useFields, randomFields, Field, Mode} from "../hooks";
@@ -94,9 +94,15 @@ const Index = (): JSX.Element => {
                             setRand(genRand());
                         }}
                     >
-                        {display}
-                        {isDaily ? <code> [D]</code> : null}
-                        {rec > 0 ? <code> [R{rec}]</code> : null}
+                        <Flex direction="row" align="center">
+                            <span>{display}</span>
+                            {isDaily ? (
+                                <code className={spacing.left5}> [D]</code>
+                            ) : null}
+                            {rec > 0 ? (
+                                <code className={spacing.left5}> [R{rec}]</code>
+                            ) : null}
+                        </Flex>
                     </Checkbox>
                 ))}
             </Grid>
