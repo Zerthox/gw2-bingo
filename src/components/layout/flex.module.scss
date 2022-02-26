@@ -1,0 +1,49 @@
+.flex {
+    display: flex;
+}
+
+$directions: row, row-reverse, column, column-reverse;
+@each $dir in $directions {
+    .direction-#{$dir} {
+        flex-direction: $dir;
+    }
+}
+
+$aligns: (
+    start: flex-start,
+    end: flex-end,
+    center: center,
+    stretch: stretch,
+    baseline: baseline
+);
+@each $name, $align in $aligns {
+    .align-#{$name} {
+        align-items: $align;
+    }
+}
+
+$justifies: (
+    start: flex-start,
+    end: flex-end,
+    center: center,
+    stretch: stretch,
+    between: space-between,
+    around: space-around,
+    evenly: space-evenly
+);
+@each $name, $wrap in $justifies {
+    .justify-#{$name} {
+        justify-content: $wrap;
+    }
+}
+
+$wraps: (
+    no: nowrap,
+    wrap: wrap,
+    reverse: wrap-reverse
+);
+@each $name, $wrap in $wraps {
+    .wrap-#{$name} {
+        flex-wrap: $wrap;
+    }
+}
