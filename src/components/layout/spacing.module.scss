@@ -1,39 +1,10 @@
-.top10 {
-    margin-top: 10px;
-}
-.top20 {
-    margin-top: 20px;
-}
-.top30 {
-    margin-top: 30px;
-}
+$directions: top, bottom, left, right;
+$sizes: 5, 10, 20, 30;
 
-.bottom10 {
-    margin-bottom: 10px;
-}
-.bottom20 {
-    margin-bottom: 20px;
-}
-.bottom30 {
-    margin-bottom: 30px;
-}
-
-.left10 {
-    margin-left: 10px;
-}
-.left20 {
-    margin-left: 20px;
-}
-.left30 {
-    margin-left: 30px;
-}
-
-.right10 {
-    margin-right: 10px;
-}
-.right20 {
-    margin-right: 20px;
-}
-.right30 {
-    margin-right: 30px;
+@each $direction in $directions {
+    @each $size in $sizes {
+        .#{$direction}#{$size} {
+            margin-#{$direction}: #{$size}px;
+        }
+    }
 }
