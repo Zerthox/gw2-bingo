@@ -46,6 +46,7 @@ module.exports = {
             json: "always"
         }],
         "@typescript-eslint/no-unused-vars": "error",
+        "@typescript-eslint/explicit-module-boundary-types": "error",
         "rulesdir/no-anonymous-exports-page-templates": "warn",
         "rulesdir/limited-exports-page-templates": "warn"
     }

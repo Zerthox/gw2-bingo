@@ -17,7 +17,6 @@ const Card = ({tiles}: CardProps, ref: ForwardedRef<HTMLDivElement>): JSX.Elemen
                     key={i}
                     {...props}
                     highlight={active[i]}
-                    className={props.className}
                     onClick={() => {
                         active[i] = !active[i];
                         setActive([...active]);

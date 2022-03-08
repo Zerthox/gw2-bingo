@@ -34,7 +34,7 @@ export const useFractalsWithLobby = (): Fractal[] => useFractalData().allFractal
 
 export const useFractals = (): Fractal[] => useFractalsWithLobby().slice(1);
 
-export const scaleToTier = (scale: number) => {
+export const scaleToTier = (scale: number): number => {
     if (scale <= 0 || scale >= 100) {
         return 0;
     } else if (scale <= 25) {
