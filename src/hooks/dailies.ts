@@ -1,4 +1,5 @@
 import {useStaticQuery, graphql} from "gatsby";
+import {DATE, OFFSET} from "../data";
 
 interface DailyEntry {
     _0: number;
@@ -41,16 +42,12 @@ export const useRecs = (): number[][] => useDailyData().allRecsJson.nodes.map(({
 /** One day in milliseconds. */
 const DAY = 24 * 60 * 60 * 1000;
 
-/** Base offset in the daily rotation. */
-const OFFSET = 0;
-
 /** Returns the index in the daily rotation for a given date. */
 const indexFor = (date: Date) => {
-    // calculate the time passed since start of the year
-    const start = Date.UTC(date.getUTCFullYear(), 0, 1);
-    const passed = date.getTime() - start;
+    // calculate time passed since last update
+    const passed = date.getTime() - DATE;
 
-    // days passed are the rotation
+    // index is days passed
     return (Math.floor(passed / DAY) + OFFSET) % 15;
 };
 
