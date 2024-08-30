@@ -29,7 +29,6 @@ module.exports = {
                 allExtensions: true
             }
         },
-        "gatsby-plugin-typescript-checker",
         {
             resolve: "gatsby-plugin-sass",
             options: {
