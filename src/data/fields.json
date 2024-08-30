@@ -755,5 +755,105 @@
         "fractal": "Sunqua Peak",
         "mode": "Normal",
         "event": "\"Tamed\" any of the Elementals"
+    },
+    {
+        "fractal": "Silent Surf",
+        "mode": "Normal",
+        "encounter": "Jumping Puzzle",		
+        "event": "Spider Man - Did the JP without fails"
+    },
+    {
+        "fractal": "Silent Surf",
+        "mode": "CM",
+        "event": "Cheat day - Used a revive orb"
+    },
+    {
+        "fractal": "Silent Surf",
+        "mode": "CM",
+        "event": "Take a closer look - Got feared off the platform"
+    },
+    {
+        "fractal": "Silent Surf",
+        "mode": "CM",
+        "event": "Feels naked - Kanaxai has stolen your boons"
+    },
+    {
+        "fractal": "Silent Surf",
+        "mode": "CM",
+        "event": "Add management - No adds at 33%"
+    },
+    {
+        "fractal": "Silent Surf",
+        "mode": "CM",
+        "event": "I don't care - Broke less then 5 CC-bars"
+    },
+    {
+        "fractal": "Silent Surf",
+        "mode": "CM",	
+        "event": "Carrier - You did most CC"
+    },
+    {
+        "fractal": "Silent Surf",
+        "mode": "CM",	
+        "event": "Too greedy - Someone died during first spread"
+    },
+    {
+        "fractal": "Silent Surf",
+        "mode": "CM",	
+        "event": "BUG! - Kanaxai finished his World Cleaver attack"
+    },
+    {
+        "fractal": "Lonely Tower",
+        "mode": "Both",
+        "encounter": "Deimos & Cerus",		
+        "event": "Carefully - No oil was triggered"
+    },
+	{
+        "fractal": "Lonely Tower",
+        "mode": "Both",
+        "encounter": "Deimos & Cerus",		
+        "event": "Solid - Did not get hit by Deimos' pizza attack"
+    },
+	{
+        "fractal": "Lonely Tower",
+        "mode": "Both",
+        "encounter": "Deimos & Cerus",		
+        "event": "Too much pressure - Went downstate"
+    },
+    {
+        "fractal": "Lonely Tower",
+        "mode": "Both",
+        "encounter": "Eparch",		
+        "event": "Enjoy your buffs - At least one CC-bar wasn't broken"
+    },
+    {
+        "fractal": "Lonely Tower",
+        "mode": "Both",
+        "encounter": "Eparch",		
+        "event": "Fully loaded - Eparch had 10 or more stacks of at least one empowerement"
+    },
+    {
+        "fractal": "Lonely Tower",
+        "mode": "CM",
+        "encounter": "Eparch",		
+        "event": "Smooth kill"
+    },
+    {
+        "fractal": "Lonely Tower",
+        "mode": "CM",
+        "encounter": "Eparch",		
+        "event": "Where is my mind - forgot to collect an entire set of orbs"
+    },
+    {
+        "fractal": "Lonely Tower",
+        "mode": "CM",
+        "encounter": "Eparch",		
+        "event": "Close call - Recover and kill after at least two people were downstate at the same time"
+    },
+    {
+        "fractal": "Lonely Tower",
+        "mode": "CM",
+        "encounter": "Eparch",		
+        "event": "Carrier - You did most CC"
     }
 ]
